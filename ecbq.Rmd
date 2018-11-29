@@ -9,8 +9,8 @@ INSTRUCTIONS: Please read carefully before starting. [PURPLE SCALE]
 As you read each description of the child’s behavior below, please indicate how often the child did this during the last two weeks by circling one of the numbers in the right column. 
 These numbers indicate how often you observed the behavior described during the last two weeks.
    
-| never | rarely | less than half the time | about half the time | more than half of the time | almost all of the time | always | does not apply | 
-|-|-|-|-|-|-|-|
+| never | rarely | less than half the time | about half the time | more than half the time | almost always | always | does not apply | 
+|-|-|-|-|-|-|-|-|
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | NA |
 
 
@@ -57,13 +57,13 @@ run through the house? ||
 | When s/he asked for something and you said “no”, how often did your child
 have a temper tantrum? ||
 | When asked to wait for a desirable item (such as ice cream), how often did your child wait patiently? ||
-| When being gently rocked, how often did your child
-smile? || 
+| When being gently rocked, how often did your child smile? || 
 | While being held on your lap, how often did your child mold to your body? ||
 | When a familiar adult, such as a relative or friend, visited your home, how often did your child want to interact with the adult? ||
 | When asked to do so, how often was your child able to be careful with something breakable? ||
 | When visiting a new place, how often did your child not want to enter? ||
-| When s/he was upset, how often did your child...cry for more than 3 minutes, even when being comforted? ||
+| When s/he was upset, how often did your child...
+cry for more than 3 minutes, even when being comforted? ||
 | ...become easily soothed? ||
 | When you were busy, how often did your child find another activity to do when asked? ||
 | When around large gatherings of familiar adults or children, how often did your child

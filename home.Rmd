@@ -17,7 +17,11 @@ TRUE _____  FALSE _____
 
 TRUE _____  FALSE _____
 
-**C3. We almost always seem to be rushed C4. We are usually able to “stay on top of things**
+**C3. We almost always seem to be rushed**
+
+TRUE _____  FALSE _____
+
+**C4. We are usually able to “stay on top of things**
 
 TRUE _____  FALSE _____
 

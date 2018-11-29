@@ -27,5 +27,8 @@ output:
 ```{r child = 'locomotor_milestones.Rmd'}
 ```
 
+```{r child = 'eclsb_health.Rmd'}
+```
+
 ```{r child = 'typical_day.Rmd'}
 ```

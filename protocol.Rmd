@@ -214,8 +214,12 @@ Set up camera to record the questionnaires.
 You'll need to change the battery on the camera to ensure sufficient power.
 Sit next to the mom so she is able to read along.
 
-- [Toys and Pets](toys_pets.html)
-- [Home Environment](home.html)
+- [Toys & Pets](toys_pets.html)
+- [HOME](home.html)
+- [Gender Socialization](gender.html)
+- [Locomotor milestones](locomotor_milestones.html)
+- [ECLS-B Health](eclsb_health.html)
+- [Typical Day](typical_day.html)
 
 #### MacArthur-Bates Communicative Development Inventory (MB-CDI)
 
