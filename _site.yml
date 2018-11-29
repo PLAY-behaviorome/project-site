@@ -1,0 +1,27 @@
+name: "PLAY Project"
+navbar:
+  title: "PLAY"
+  left:
+    - text: "home"
+      href: index.html
+    - text: "about"
+      href: about.html
+    - text: "people"
+      href: people.html
+    - text: "protocol"
+      href: protocol.html
+    - text: "coding"
+      href: coding_manual.html
+    - text: "data"
+      href: data.html
+    - text: "GitHub"
+      href: http://github.com/PLAY-behaviorome/
+    - text: "site info"
+      href: site-info.html
+output_dir: "docs"
+output:
+  html_document:
+    theme: lumen
+    highlight: textmate
+    include:
+      after_body: footer.html

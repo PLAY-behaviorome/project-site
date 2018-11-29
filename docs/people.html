@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">home</a>
+</li>
+<li>
+  <a href="about.html">about</a>
+</li>
+<li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="protocol.html">protocol</a>
+</li>
+<li>
+  <a href="coding_manual.html">coding</a>
+</li>
+<li>
+  <a href="data.html">data</a>
+</li>
+<li>
+  <a href="http://github.com/PLAY-behaviorome/">GitHub</a>
+</li>
+<li>
+  <a href="site-info.html">site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><img src="img/PLAY-logo.png" height=150px/></p>
+<div id="principal-investigators" class="section level2">
+<h2>Principal Investigators</h2>
+<p><strong>Karen E. Adolph, Ph.D</strong>.</br> New York University</br> Principal Investigator</p>
+<p><strong>Catherine Tamis-LeMonda, Ph.D.</strong></br> New York University</br> Co-Principal Investigator</p>
+<p><strong>Rick O. Gilmore, Ph.D.</strong></br> The Pennsylvania State University</br> Co-Principal Investigator</p>
+</div>
+<div id="staff" class="section level2">
+<h2>Staff</h2>
+<p><strong>Kasey Soska, Ph.D.</strong></br> Scientific Director</p>
+<p><strong>Melody Xu</strong>, B.S.</br> Program Coordinator</p>
+</div>
+<div id="collaborating-investigators" class="section level2">
+<h2>Collaborating Investigators</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Last</th>
+<th align="left">First</th>
+<th align="left">Institution</th>
+<th align="left">Collection_role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Adolph</td>
+<td align="left">Karen</td>
+<td align="left">New York University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Amso</td>
+<td align="left">Dima</td>
+<td align="left">Brown University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Barr</td>
+<td align="left">Rachel</td>
+<td align="left">Georgetown University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Berenbaum</td>
+<td align="left">Sheri</td>
+<td align="left">Penn State University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Bornstein</td>
+<td align="left">Marc</td>
+<td align="left">SRCD</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Boudreau</td>
+<td align="left">Jean-Paul</td>
+<td align="left">Ryerson University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Bradley</td>
+<td align="left">Bob</td>
+<td align="left">Arizona State University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Brandone</td>
+<td align="left">Amanda</td>
+<td align="left">Lehigh University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Brooker</td>
+<td align="left">Rebecca</td>
+<td align="left">Texas A&amp;M</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Buss</td>
+<td align="left">Kristin</td>
+<td align="left">Penn State University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Casasola</td>
+<td align="left">Marianella</td>
+<td align="left">Cornell University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Chi</td>
+<td align="left">Guangqing</td>
+<td align="left">Penn State University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Claxton</td>
+<td align="left">Laura</td>
+<td align="left">Purdue University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Davis</td>
+<td align="left">Elizabeth</td>
+<td align="left">University of California at Riverside</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">de Barbaro</td>
+<td align="left">Kaya</td>
+<td align="left">University of Texas at Austin</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Dusing</td>
+<td align="left">Stacey</td>
+<td align="left">Virginia Commonwealth University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Evans</td>
+<td align="left">Gary</td>
+<td align="left">Cornell University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Fausey</td>
+<td align="left">Caitlin</td>
+<td align="left">University of Oregon</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Franchack</td>
+<td align="left">John</td>
+<td align="left">University of California at Riverside</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Frank</td>
+<td align="left">Mike</td>
+<td align="left">Stanford University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Frick</td>
+<td align="left">Janet</td>
+<td align="left">University of Georgia</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Gill</td>
+<td align="left">Simone</td>
+<td align="left">Boston University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Gilmore</td>
+<td align="left">Rick</td>
+<td align="left">Penn State University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Goldin-Meadow</td>
+<td align="left">Susan</td>
+<td align="left">University of Chicago</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Goldstein</td>
+<td align="left">Mike</td>
+<td align="left">Cornell University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Haddad</td>
+<td align="left">Jeff</td>
+<td align="left">Purdue University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Halim</td>
+<td align="left">May Ling</td>
+<td align="left">California State University at Long Beach</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Hane</td>
+<td align="left">Amie</td>
+<td align="left">Williams College</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Hauck</td>
+<td align="left">Janet</td>
+<td align="left">Michigan State University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Heathcock</td>
+<td align="left">Jill</td>
+<td align="left">Ohio State University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Henderson</td>
+<td align="left">Heather</td>
+<td align="left">University of Waterloo</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Hirsh-Pasek</td>
+<td align="left">Kathy</td>
+<td align="left">Temple University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Iverson</td>
+<td align="left">Jana</td>
+<td align="left">University of Pittsburgh</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Karasik</td>
+<td align="left">Lana</td>
+<td align="left">CUNY – College of Staten Island</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Lee</td>
+<td align="left">Do Kyeong</td>
+<td align="left">California State University at Fullerton</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Lee</td>
+<td align="left">Mei-Hua</td>
+<td align="left">Michigan State University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Legare</td>
+<td align="left">Cristine</td>
+<td align="left">University of Texas at Austin</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Lew-Williams</td>
+<td align="left">Casey</td>
+<td align="left">Princeton University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Libertus</td>
+<td align="left">Klaus</td>
+<td align="left">University of Pittsburgh</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">LoBue</td>
+<td align="left">Vanessa</td>
+<td align="left">Rutgers University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Lockman</td>
+<td align="left">Jeff</td>
+<td align="left">Tulane University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">MacWhinney</td>
+<td align="left">Brian</td>
+<td align="left">Carnegie Mellon University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Messinger</td>
+<td align="left">Dan</td>
+<td align="left">University of Miami</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Naigles</td>
+<td align="left">Letitia</td>
+<td align="left">University of Connecticut</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Namy</td>
+<td align="left">Laura</td>
+<td align="left">Society for Research In Child Development</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Needham</td>
+<td align="left">Amy</td>
+<td align="left">Vanderbilt University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Newcombe</td>
+<td align="left">Nora</td>
+<td align="left">Temple University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Oakes</td>
+<td align="left">Lisa</td>
+<td align="left">University of California at Davis</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Olson</td>
+<td align="left">Kristina</td>
+<td align="left">University of Washington</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Perez-Edgar</td>
+<td align="left">Koraly</td>
+<td align="left">Penn State University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Pomerantz</td>
+<td align="left">Eva</td>
+<td align="left">University of Illinois at Urbana-Champagne</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Prosser</td>
+<td align="left">Laura</td>
+<td align="left">Children’s Hospital of Philadelphia</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Rowe</td>
+<td align="left">Meredith</td>
+<td align="left">Harvard University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Schmuckler</td>
+<td align="left">Mark</td>
+<td align="left">University of Toronto Scarborough</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Sheya</td>
+<td align="left">Adam</td>
+<td align="left">University of Connecticut</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Soderstrom</td>
+<td align="left">Melanie</td>
+<td align="left">University of Manitoba</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Song</td>
+<td align="left">Lulu</td>
+<td align="left">Brooklyn College</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Tamis-LeMonda</td>
+<td align="left">Catherine</td>
+<td align="left">New York University</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Vishton</td>
+<td align="left">Peter</td>
+<td align="left">College of William &amp; Mary</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Walle</td>
+<td align="left">Eric</td>
+<td align="left">University of California at Merced</td>
+<td align="left">Not collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Wang</td>
+<td align="left">Su-hua</td>
+<td align="left">University of California at Santa Cruz</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Warlaumont</td>
+<td align="left">Anne</td>
+<td align="left">University of California at Los Angeles</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Yoshida</td>
+<td align="left">Hanako</td>
+<td align="left">University of Houston</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="even">
+<td align="left">Yu</td>
+<td align="left">Chen</td>
+<td align="left">Indiana University</td>
+<td align="left">Collecting</td>
+</tr>
+<tr class="odd">
+<td align="left">Yurovsky</td>
+<td align="left">Dan</td>
+<td align="left">University of Chicago</td>
+<td align="left">Collecting</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>This project is supported by a grant (R01-HD094830) from the Eunice Kennedy Shriver National Institute for Child Health and Human Development. Copyright &copy; 2018- Karen E. Adolph, Catherine Tamis-LeMonda, & Rick O. Gilmore</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

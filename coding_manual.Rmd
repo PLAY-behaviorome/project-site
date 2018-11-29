@@ -1,0 +1,29 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+---
+
+```{r child = 'coding_setup.Rmd'}
+```
+
+```{r child = 'transcription.Rmd'}
+```
+
+```{r child = 'communication.Rmd'}
+```
+
+```{r child = 'gesture.Rmd'}
+```
+
+```{r child = 'locomotion.Rmd'}
+```
+
+```{r child = 'objects.Rmd'}
+```
+
+```{r child = 'emotion.Rmd'}
+```

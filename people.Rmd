@@ -1,0 +1,39 @@
+---
+title: ""
+---
+
+<img src="img/PLAY-logo.png" height=150px/>
+
+## Principal Investigators
+
+**Karen E. Adolph, Ph.D**.</br>
+New York University</br>
+Principal Investigator
+
+**Catherine Tamis-LeMonda, Ph.D.**</br>
+New York University</br>
+Co-Principal Investigator
+
+**Rick O. Gilmore, Ph.D.**</br>
+The Pennsylvania State University</br>
+Co-Principal Investigator
+
+## Staff
+
+**Kasey Soska, Ph.D.**</br>
+Scientific Director
+
+**Melody Xu**, B.S.</br>
+Program Coordinator
+
+## Collaborating Investigators
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+roster_df <- readr::read_csv("csv/roster.csv")
+roster <- roster_df %>%
+  dplyr::select(., Last, First, Institution, Collection_role) %>%
+  dplyr::arrange(., Last)
+knitr::kable(roster)
+```
+
