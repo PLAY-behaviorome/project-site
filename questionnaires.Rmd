@@ -21,3 +21,11 @@ output:
 ```{r child = 'home.Rmd'}
 ```
 
+```{r child = 'gender.Rmd'}
+```
+
+```{r child = 'locomotor_milestones.Rmd'}
+```
+
+```{r child = 'typical_day.Rmd'}
+```

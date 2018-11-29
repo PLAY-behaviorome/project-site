@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -170,101 +167,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -319,231 +221,103 @@ div.tocify {
 </div>
 
 
-<div id="toys-and-materials" class="section level2">
-<h2>TOYS AND MATERIALS</h2>
-<p><strong>T1. Does [CHILD] HAVE the following toys at home?</strong></p>
-<table style="width:83%;">
-<colgroup>
-<col width="66%" />
-<col width="9%" />
-<col width="6%" />
-</colgroup>
+<div id="locomotor-milestones" class="section level2">
+<h2>Locomotor milestones</h2>
+<p><strong>SOURCE OF REPORT:</strong></p>
+<ul>
+<li>CALENDAR ___</li>
+<li>BABYBOOK ___</li>
+<li>MEMORY ___</li>
+<li>PHONE ___ (ask parent if brought book)</li>
+</ul>
+<p><strong>WHO- WALK ONSET</strong></p>
+<p>_____/_____/_____</p>
+<p>AGE MOS ________</p>
+<p>(~12, 10-14 mos) (5 steps no holding, no falling)</p>
+<p><strong>K’s- WALK ONSET</strong></p>
+<p>_____/_____/_____</p>
+<p>AGE MOS ________</p>
+<p>(~12, 10-14 mos) (10 ft. across room no holding, no falling)</p>
+<p><strong>CRUISE ONSET</strong></p>
+<p>_____/_____/_____</p>
+<p>AGE MOS ________</p>
+<p>(~9, 8-11 mos) (sideways holding furniture for support)</p>
+<p><strong>CRAWL ONSET</strong></p>
+<p>_____/_____/_____</p>
+<p>AGE MOS ________</p>
+<p>(~8, 6-10 mos) (no belly touching, 10 ft. across a room, hands/knees, hands/feet)</p>
+<p><strong>BELLY CRAWL ONSET</strong></p>
+<p>_____/_____/_____</p>
+<p>AGE MOS ________</p>
+<p>(~7, 5-8 mos) (prone position, belly touch sometimes, 10 ft. across a room, note bum shuffling)</p>
+<table>
 <thead>
 <tr class="header">
-<th></th>
-<th>Yes</th>
-<th>No</th>
+<th>Birthdate</th>
+<th>Calendar date</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Action figures</td>
-<td></td>
-<td></td>
+<td>birth</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="even">
-<td>Baby stroller</td>
-<td></td>
-<td></td>
+<td>5 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="odd">
-<td>Baby walker</td>
-<td></td>
-<td></td>
+<td>**6 mos*</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="even">
-<td>Balls</td>
-<td></td>
-<td></td>
+<td>7 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="odd">
-<td>Buildings such as school, farm, castle</td>
-<td></td>
-<td></td>
+<td>8 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="even">
-<td>Busy box/Activity Center</td>
-<td></td>
-<td></td>
+<td>9 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="odd">
-<td>Children’s books</td>
-<td></td>
-<td></td>
+<td>10 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="even">
-<td>Cleaning set</td>
-<td></td>
-<td></td>
+<td>11 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="odd">
-<td>Crayons, coloring books, paints</td>
-<td></td>
-<td></td>
+<td><strong>12 mos</strong></td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="even">
-<td>Doctor set</td>
-<td></td>
-<td></td>
+<td>13 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="odd">
-<td>Dolls</td>
-<td></td>
-<td></td>
+<td>14 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="even">
-<td>Dress up clothes or costumes (like princess or Spiderman costumes; adult-like shoes)</td>
-<td></td>
-<td></td>
+<td><strong>15 mos</strong></td>
+<td><strong>/</strong>/__</td>
 </tr>
 <tr class="odd">
-<td>ExerSaucer</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Geometric shapes</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Interlocking blocks (Duplo/Lego blocks that fit together)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Jolly jumper / bouncer</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Kitchen sets, tea sets, and/or food sets</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Makeup or grooming toys (brush, comb, mirror, makeup)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Model size play sets for dolls (doll house)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Musical instruments</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Nesting/stacking toys</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Playdoh or clay</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Pocketbooks, purse, glasses.</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Push toy (ball popper, lawn mower)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Puzzles</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Ride toys (bike, scooter, rocking horse, car to sit in)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Shape sorter</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Soft toys like teddy bear, stuffed animals or puppets</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Sports equipment (nets, bats, racquets, hockey sticks)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Tools (screwdriver, hammer)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Toy computer</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Toy guns and/or swords</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Toy phone</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Train or roadway sets</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Vehicles (cars, trucks, trains and planes)</td>
-<td></td>
-<td></td>
+<td>16 mos</td>
+<td><strong>/</strong>/__</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="pets" class="section level2">
-<h2>PETS</h2>
-<p><strong>P1. Do you have any pets at home?</strong></p>
-<p>No _____ Yes _____</p>
-<p>Please list? ______________________________.</p>
-<p><strong>P2. Do you have any dogs at home?</strong></p>
-<p>No _____ Yes _____</p>
-<ul>
-<li><p><strong>P2a. How many?</strong> ____________.</p></li>
-<li><p><strong>P2b. Do they live mainly</strong>:</p></li>
-</ul>
-<p>Indoors _____ Outdoors _____</p>
-<p><strong>P3. Do you have any cats at home?</strong></p>
-<p>No _____ Yes _____</p>
-<ul>
-<li><p><strong>P3a. How many?</strong> ____________.</p></li>
-<li><p><strong>P3b. Do they live mainly</strong>:</p></li>
-</ul>
-<p>Indoors _____ Outdoors _____</p>
-<p><strong>P4. Has the number of pets in your home changed since your infant was born?</strong></p>
-<p>No _____ Yes _____</p>
-<p>Please explain: ______________________________.</p>
 </div>
 
 <hr>
 <p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
 
 
-</div>
-</div>
 
 </div>
 
