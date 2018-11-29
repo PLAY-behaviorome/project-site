@@ -2,6 +2,7 @@
 # Script to update and save PLAY roster data
 
 library(googlesheets)
+library(tidyverse)
 
 roster_title = "PLAY Project Roster"
 out_fn = "csv/roster.csv"
