@@ -206,7 +206,11 @@ Please note that presentation and format will differ in the app.
 
 Instructions:
 
-*I have some questions for you…* [Only give introduction to the sections that need introduction (i.e., ECBQ and MB-CDI)].
+*I have some questions for you…* 
+
+[Only give introduction to the sections that need introduction (i.e., ECBQ and MB-CDI)].
+
+A GoogleSheet with most of the questions in a database format can be found [here](https://docs.google.com/spreadsheets/d/1pVOM2naRS_STCXx4nkaRDLO6_V5kGhFaduRfwsv7cnI/edit?usp=sharing).
 
 Procedure:
 
@@ -220,6 +224,7 @@ Sit next to the mom so she is able to read along.
 - [Locomotor milestones](locomotor_milestones.html)
 - [ECLS-B Health](eclsb_health.html)
 - [Typical Day](typical_day.html)
+- [Media time & use](media.html)
 
 #### MacArthur-Bates Communicative Development Inventory (MB-CDI)
 

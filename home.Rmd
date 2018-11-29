@@ -2,7 +2,7 @@
 title: ''
 ---
 
-## E. HOME ENVIRONMENT
+## HOME ENVIRONMENT
 
 I am going to read you statements about your home. 
 Please answer which statements are True and which one’s are False. 
@@ -17,15 +17,15 @@ TRUE _____  FALSE _____
 
 TRUE _____  FALSE _____
 
-**C3. We almost always seem to be rushed**
+**C3. We almost always seem to be rushed.**
 
 TRUE _____  FALSE _____
 
-**C4. We are usually able to “stay on top of things**
+**C4. We are usually able to “stay on top of things".**
 
 TRUE _____  FALSE _____
 
-**C5. It’s a real “zoo” in our home**
+**C5. It’s a real “zoo” in our home.**
 
 TRUE _____  FALSE _____
 
@@ -33,7 +33,11 @@ TRUE _____  FALSE _____
 
 TRUE _____  FALSE _____
 
-**C7. There is often a fuss going on at our home. C8. Our home is a good place to relax.**
+**C7. There is often a fuss going on at our home.**
+
+TRUE _____  FALSE _____
+
+**C8. Our home is a good place to relax.**
 
 TRUE _____  FALSE _____
 

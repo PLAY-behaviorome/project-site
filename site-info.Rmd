@@ -2,7 +2,7 @@
 title: "About the site"
 ---
 
-This site is generated in [R Markdown](http://rmarkdown.rstudio.com/) using [RStudio](http://rstudio.com).
+This site is generated in [R Markdown](http://rmarkdown.rstudio.com/) using [RStudio](http://rstudio.com), version `r rstudioapi::versionInfo()$version`.
 
 For information about using R Markdown to generate websites, see <http://rmarkdown.rstudio.com/rmarkdown_websites.html>.
 For formatting information, see <http://rmarkdown.rstudio.com/html_document_format.html>.

@@ -15,7 +15,7 @@ output:
 
 (NOTE: END screener if language is spoken to target child is not English or Spanish to target child.)
 
-## A. CHILD INFORMATION
+## CHILD INFORMATION
 
 **A1. What is [CHILD]’s birth date?**
 
@@ -45,11 +45,11 @@ If yes, please specify:
 
 **A7. At what time does your child typically:**
 
-- A7a. Fall asleep at night?  	
+- **A7a. Fall asleep at night?**  	
 
-- A7b. Wake up in the morning?
+- **A7b. Wake up in the morning?**
 
-## B. CHILD CARE ARRANGEMENTS
+## CHILD CARE ARRANGEMENTS
 
 **B1. Does anyone other than you take care of the child on regular basis?**
 
@@ -62,7 +62,7 @@ If yes, please specify:
 
 Hours/week: __________
 
-## C. MOTHER INFORMATION
+## MOTHER INFORMATION
 
 **C1. What is your birth date?**
 
@@ -88,9 +88,9 @@ Ethnicity:
 - Hispanic or Latino
 - Not Hispanic or Latino 
 
-## D. PARTNER INFORMATION [WIFE / HUSBAND]
+## PARTNER INFORMATION [WIFE / HUSBAND]
 
-[EXPERIMENTER] Say to mom: “Does [CHILD]’s father live in the home with you?”
+[EXPERIMENTER] Say to mom: *“Does [CHILD]’s father live in the home with you?”*
 
 If yes: continue…
 If no: SKIP AND MOVE ONTO PART E.
@@ -121,7 +121,7 @@ Ethnicity:
 - Hispanic or Latino
 - Not Hispanic or Latino 
 
-## E. FAMILY STRUCTURE
+## FAMILY STRUCTURE
 
 **E1. In addition to you and [CHILD]’s father (if dad lives with mom/child), please tell me who else lives with you permanently?**
 

@@ -4,9 +4,10 @@ title: ''
 
 ## HEALTH (from ECLS-B)
 
-### A. Mother Information
+### Mother Information
 
 **A1. In what country were you born?**
+
 - (1) United States
 - (2) Puerto Rico
 - (3) Other US territory
@@ -57,7 +58,7 @@ title: ''
 - NO 
 - REFUSED
 
-### B. Partner Information [Wife/Husband]
+### Partner Information [Wife/Husband]
 
 Experimenter: “Does [CHILD]’s father live in the home with you? If yes: continue... If no: SKIP TO C.
 
@@ -104,7 +105,7 @@ Experimenter: “Does [CHILD]’s father live in the home with you? If yes: cont
 - NO 
 - REFUSED
     
-### C. Childcare
+### Childcare
 
 Experimenter: 
 **Does [CHILD] attend any childcare center or is cared for by a nanny on a regular basis?** 
@@ -113,7 +114,9 @@ If yes: Continue...
 
 If no: Skip to Section D.
 
-**C1. Excluding [CHILD], how many children are usually cared for at the same time? Number of Children:**
+**C1. Excluding [CHILD], how many children are usually cared for at the same time?**
+
+Number of Children: _____
 
 **C2. How old was [CHILD] in months when {he/she} first attended any child care center or nanny on a regular basis?**
 
@@ -121,7 +124,7 @@ Number of Months: ____
 
 **C3. What language does [CHILD]'s care provider speak most when caring for [CHILD]?**
 
-### D. Feeding/Nutrition
+### Feeding/Nutrition
 
 **D1. Did you ever breast-feed [CHILD]?**
 
@@ -199,7 +202,7 @@ Number of Months: ____
 - REFUSED
 - DON'T KNOW
 
-### E. Sleep Hygiene
+### Sleep Hygiene
 
 **E1. How many hours of nap time does your child have during the day?**
 
@@ -233,13 +236,13 @@ _______________
 - REFUSED 
 - DON'T KNOW
 
-### F. General Health
+### General Health
 
 Now, I’d like to ask you about [CHILD]’s health.
 
-**F1. Would you say [CHILD]’s health is...*
+**F1. Would you say [CHILD]’s health is...**
 
-- 1 Excellent,
+- 1 Excellent
 - 2 Very good
 - 3 Good,
 - 4 Fair
@@ -302,7 +305,7 @@ Now, I’d like to ask you about [CHILD]’s health.
 - REFUSED
 - DON'T KNOW
 
-### G. Prenatal Care and Behaviors
+### Prenatal Care and Behaviors
 
 **G1. Did you ever visit a doctor or clinic for prenatal care when you were pregnant with [CHILD]?**
 
@@ -311,7 +314,7 @@ Now, I’d like to ask you about [CHILD]’s health.
 - REFUSED 
 - DON'T KNOW
    
-### H. Smoking
+### Smoking
 
 **H1. During your 1st trimester, how many cigarettes or packs did you smoke on an average day?**
 
@@ -369,7 +372,7 @@ Now, I’d like to ask you about [CHILD]’s health.
 - REFUSED 
 - DON'T KNOW
    
-### I. Drinking
+### Drinking
 
 **I1. During your pregnancy, how many alcoholic drinks did you have in an average week?**
 
@@ -419,7 +422,7 @@ Now, I’d like to ask you about [CHILD]’s health.
 - REFUSED
 - DON'T KNOW
 
-### J. Food Sufficiency
+### Food Sufficiency
 
 These next questions are about the food eaten in your household.
 

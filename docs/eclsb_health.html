@@ -223,9 +223,23 @@ $(document).ready(function () {
 
 <div id="health-from-ecls-b" class="section level2">
 <h2>HEALTH (from ECLS-B)</h2>
-<div id="a.-mother-information" class="section level3">
-<h3>A. Mother Information</h3>
-<p><strong>A1. In what country were you born?</strong> - (1) United States - (2) Puerto Rico - (3) Other US territory - (4) Other country (specify)</p>
+<div id="mother-information" class="section level3">
+<h3>Mother Information</h3>
+<p><strong>A1. In what country were you born?</strong></p>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>United States</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li>Puerto Rico</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: decimal">
+<li>Other US territory</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: decimal">
+<li>Other country (specify)</li>
+</ol></li>
+</ul>
 <p><strong>A2. If not born in the US, When did you come to live in the U.S.?</strong></p>
 <p><strong>A3. What is the highest grade or year of school that you have completed?</strong></p>
 <ul>
@@ -270,8 +284,8 @@ $(document).ready(function () {
 <li>REFUSED</li>
 </ul>
 </div>
-<div id="b.-partner-information-wifehusband" class="section level3">
-<h3>B. Partner Information [Wife/Husband]</h3>
+<div id="partner-information-wifehusband" class="section level3">
+<h3>Partner Information [Wife/Husband]</h3>
 <p>Experimenter: “Does [CHILD]’s father live in the home with you? If yes: continue… If no: SKIP TO C.</p>
 <p><strong>B1. What is the highest grade or year of school that [he/she] has completed?</strong></p>
 <ul>
@@ -316,18 +330,19 @@ $(document).ready(function () {
 <li>REFUSED</li>
 </ul>
 </div>
-<div id="c.-childcare" class="section level3">
-<h3>C. Childcare</h3>
+<div id="childcare" class="section level3">
+<h3>Childcare</h3>
 <p>Experimenter: <strong>Does [CHILD] attend any childcare center or is cared for by a nanny on a regular basis?</strong></p>
 <p>If yes: Continue…</p>
 <p>If no: Skip to Section D.</p>
-<p><strong>C1. Excluding [CHILD], how many children are usually cared for at the same time? Number of Children:</strong></p>
+<p><strong>C1. Excluding [CHILD], how many children are usually cared for at the same time?</strong></p>
+<p>Number of Children: _____</p>
 <p><strong>C2. How old was [CHILD] in months when {he/she} first attended any child care center or nanny on a regular basis?</strong></p>
 <p>Number of Months: ____</p>
 <p><strong>C3. What language does [CHILD]’s care provider speak most when caring for [CHILD]?</strong></p>
 </div>
-<div id="d.-feedingnutrition" class="section level3">
-<h3>D. Feeding/Nutrition</h3>
+<div id="feedingnutrition" class="section level3">
+<h3>Feeding/Nutrition</h3>
 <p><strong>D1. Did you ever breast-feed [CHILD]?</strong></p>
 <ul>
 <li>YES</li>
@@ -399,8 +414,8 @@ $(document).ready(function () {
 <li>DON’T KNOW</li>
 </ul>
 </div>
-<div id="e.-sleep-hygiene" class="section level3">
-<h3>E. Sleep Hygiene</h3>
+<div id="sleep-hygiene" class="section level3">
+<h3>Sleep Hygiene</h3>
 <p><strong>E1. How many hours of nap time does your child have during the day?</strong></p>
 <p><strong>E2. Where does [CHILD] usually sleep?</strong></p>
 <ul>
@@ -426,12 +441,12 @@ $(document).ready(function () {
 <li>DON’T KNOW</li>
 </ul>
 </div>
-<div id="f.-general-health" class="section level3">
-<h3>F. General Health</h3>
+<div id="general-health" class="section level3">
+<h3>General Health</h3>
 <p>Now, I’d like to ask you about [CHILD]’s health.</p>
-<p>**F1. Would you say [CHILD]’s health is…*</p>
+<p><strong>F1. Would you say [CHILD]’s health is…</strong></p>
 <ul>
-<li>1 Excellent,</li>
+<li>1 Excellent</li>
 <li>2 Very good</li>
 <li>3 Good,</li>
 <li>4 Fair</li>
@@ -488,8 +503,8 @@ $(document).ready(function () {
 <li>DON’T KNOW</li>
 </ul>
 </div>
-<div id="g.-prenatal-care-and-behaviors" class="section level3">
-<h3>G. Prenatal Care and Behaviors</h3>
+<div id="prenatal-care-and-behaviors" class="section level3">
+<h3>Prenatal Care and Behaviors</h3>
 <p><strong>G1. Did you ever visit a doctor or clinic for prenatal care when you were pregnant with [CHILD]?</strong></p>
 <ul>
 <li>YES</li>
@@ -498,8 +513,8 @@ $(document).ready(function () {
 <li>DON’T KNOW</li>
 </ul>
 </div>
-<div id="h.-smoking" class="section level3">
-<h3>H. Smoking</h3>
+<div id="smoking" class="section level3">
+<h3>Smoking</h3>
 <p><strong>H1. During your 1st trimester, how many cigarettes or packs did you smoke on an average day?</strong></p>
 <p>(Note: Enter ‘0’ if respondent did not smoke. Enter ‘1’ if respondent smoked less than 1 cigarette a day.) (PROBE: A pack has 20 cigarettes.)</p>
 <ul>
@@ -550,8 +565,8 @@ $(document).ready(function () {
 <li>DON’T KNOW</li>
 </ul>
 </div>
-<div id="i.-drinking" class="section level3">
-<h3>I. Drinking</h3>
+<div id="drinking" class="section level3">
+<h3>Drinking</h3>
 <p><strong>I1. During your pregnancy, how many alcoholic drinks did you have in an average week?</strong></p>
 <ul>
 <li>DIDN’T DRINK THEN</li>
@@ -601,8 +616,8 @@ $(document).ready(function () {
 <li>DON’T KNOW</li>
 </ul>
 </div>
-<div id="j.-food-sufficiency" class="section level3">
-<h3>J. Food Sufficiency</h3>
+<div id="food-sufficiency" class="section level3">
+<h3>Food Sufficiency</h3>
 <p>These next questions are about the food eaten in your household.</p>
 <p><strong>J1. Please tell me whether the following statement was often true, sometimes true, or never true for [you/your household]: In the last 12 months, that is, since last [CURRENT MONTH], [CHILD] was not eating enough because [I/we] couldn’t afford enough food. For your household in the last 12 months, was that often true, sometimes true, or never true?</strong></p>
 <ul>
