@@ -198,13 +198,7 @@ Record so that the child and mother’s entire body and hands are captured.
 Use timer on camera to time engagement.
 After 3 minutes, say “Great job!”
 
-### 4: Questionnaires
-
-List of Questions on 12-mo Home Questionnaire
-
-List of Questions on 18-mo Home Questionnaire
-
-List of Questions on 24-mo Home Questionnaire
+### 4: [Questionnaires](questionnaires.html)
 
 Please note that presentation and format will differ in the app.
 

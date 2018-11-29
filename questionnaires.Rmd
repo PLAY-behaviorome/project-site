@@ -1,0 +1,23 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+---
+
+<img src="img/PLAY-logo.png" height=100px/>
+
+```{r child = 'phone_questionnaire.Rmd'}
+```
+
+```{r child = 'toys_pets.Rmd'}
+```
+
+```{r child = 'ecbq.Rmd'}
+```
+
+```{r child = 'home.Rmd'}
+```
+
