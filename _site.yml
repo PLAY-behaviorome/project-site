@@ -4,8 +4,6 @@ navbar:
   left:
     - text: "home"
       href: index.html
-    - text: "about"
-      href: about.html
     - text: "people"
       href: people.html
     - text: "protocol"
@@ -14,6 +12,8 @@ navbar:
       href: coding_manual.html
     - text: "data"
       href: data.html
+    - text: "news"
+      href: news.html
     - text: "GitHub"
       href: http://github.com/PLAY-behaviorome/
     - text: "site info"
@@ -23,5 +23,6 @@ output:
   html_document:
     theme: lumen
     highlight: textmate
+    css: css/play.css
     include:
       after_body: footer.html

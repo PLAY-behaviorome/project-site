@@ -6,7 +6,7 @@ title: ""
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Overview
+<img src="img/PLAY-logo.png" height=100px/>
 
 PLAY will produce a widely varied and rich set of data, most of which will be openly shared with the research community at the end of the five-year NIH grant period in late 2023.
 

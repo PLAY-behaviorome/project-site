@@ -7,6 +7,8 @@ output:
     toc_float: true
 ---
 
+<img src="img/PLAY-logo.png" height=100px/>
+
 ```{r child = 'coding_setup.Rmd'}
 ```
 

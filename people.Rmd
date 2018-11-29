@@ -23,7 +23,10 @@ Co-Principal Investigator
 **Kasey Soska, Ph.D.**</br>
 Scientific Director
 
-**Melody Xu**, B.S.</br>
+**Orit Hertzberg Keller**</br>
+Research Scientist
+
+**Melody Xu, B.S.**</br>
 Program Coordinator
 
 ## Collaborating Investigators
@@ -36,4 +39,3 @@ roster <- roster_df %>%
   dplyr::arrange(., Last)
 knitr::kable(roster)
 ```
-
