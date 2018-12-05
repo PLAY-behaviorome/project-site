@@ -154,6 +154,7 @@ Number of Months: ____
 - 1 Breast-fed
 - 2 Formula-fed 
 - 3 Cow’s milk 
+- 4 _________
 - REFUSED 
 - DON'T KNOW
 
