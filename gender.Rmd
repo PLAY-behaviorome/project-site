@@ -13,7 +13,7 @@ Mom report:
 - C. Pretty true
 - D. Very true
 
-*“I would be upset if (CHILD’S NAME) acted like a (other gender).”*
+**“I would be upset if (CHILD’S NAME) acted like a (other gender).”**
 
 - A. Not at all true 
 - B. A little true 
