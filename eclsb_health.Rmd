@@ -218,6 +218,7 @@ Number of Months: ____
 _______________
 
 **E3. When you put [CHILD] to bed, is [he/she] usually awake or asleep?**
+
 - AWAKE
 - ASLEEP 
 - REFUSED 
@@ -412,15 +413,15 @@ Now, I’d like to ask you about [CHILD]’s health.
 
 **I4. During your 3rd trimester, how many alcoholic drinks did you have in an average week?**
 
-- DIDN'T DRINK THEN 
-- LESS THAN 1 DRINK 
-- 1 TO 3 DRINKS
-- 4 TO 6 DRINKS
-- 7 TO 13 DRINKS
-- 14 TO 19 DRINKS
-- 20 OR MORE DRINKS 
-- REFUSED
-- DON'T KNOW
+  - DIDN'T DRINK THEN 
+  - LESS THAN 1 DRINK 
+  - 1 TO 3 DRINKS
+  - 4 TO 6 DRINKS
+  - 7 TO 13 DRINKS
+  - 14 TO 19 DRINKS
+  - 20 OR MORE DRINKS 
+  - REFUSED
+  - DON'T KNOW
 
 ### Food Sufficiency
 
