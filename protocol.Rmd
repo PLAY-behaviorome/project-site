@@ -9,6 +9,11 @@ output:
 
 <img src="img/PLAY-logo.png" height=100px/>
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source("R/write_video_clip_html.R")
+```
+
 # Overview
 
 PLAY aims to set new standards for conducting open, transparent, and reproducible behavioral science by i) publishing the protocol, and ii) making extensive use of video exemplars to demonstrate phenomena and illustrate behavioral codes.
@@ -279,7 +284,9 @@ Try not to interact with the child or make eye contact with the child. Just watc
 
 #### Shoes
 
-[VIDEO recording shoes](https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true)
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true")
+```
 
 If child is wearing shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views.
 
@@ -302,25 +309,50 @@ Place device in the most central place in the home (e.g., living room)
 
 #### 12-mo crawler & walker
 
-[VIDEO 12-mo crawler participant view](https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true)
+12-mo crawler participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true")
+```
 
-[VIDEO 12-mo crawler experimenter view](https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true)
+12-mo crawler experimenter view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true")
+```
 
-[VIDEO 12-mo walker participant view](https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true)
+12-mo walker participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true")
+```
 
-[VIDEO 12-mo walker experimenter view](https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true)
+12-mo walker experimenter view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true")
+```
 
 #### 18-mo
 
-[VIDEO 18-mo participant view](https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true)
+18-mo participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true")
+```
 
-[VIDEO 18-mo experimenter view](https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true)
+18-mo experimenter view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true")
+```
 
 #### 24-mo
 
-[VIDEO 24-mo participant view](https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true)
+24-mo participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true")
+```
 
-[VIDEO 24-mo experimenter view](https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true)
+24-mo experimenter view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true")
+```
+
 
 Interviewer:
 
@@ -342,25 +374,49 @@ After 2 minutes, say: *“Great job!”*
 
 #### 12-mo crawler & walker
 
-[VIDEO 12-mo crawler participant view](https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true)
+[VIDEO 12-mo crawler participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true")
+```
 
-[VIDEO 12-mo crawler experimenter view](https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true)
+12-mo crawler experimenter view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true")
+```
 
-[VIDEO 12-mo walker participant view](https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true)
+12-mo walker participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true")
+```
 
-[VIDEO 12-mo walker experimenter view starts at 3:40](https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true)
+12-mo walker experimenter view starts at 03:40
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true")
+```
 
 #### 18-mo
 
-[VIDEO 18-mo participant view](https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true)
+18-mo participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true")
+```
 
-[VIDEO 18-mo experimenter view starts at 3:48](https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true)
+18-mo experimenter view starts at 3:48
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true")
+```
 
 #### 24-mo
 
-[VIDEO 24-mo participant view](https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true)
+24-mo participant view
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true")
+```
 
-[VIDEO 24-mo experimenter view starts at 3:32](https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true)
+24-mo experimenter view starts at 03:32
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true")
+```
 
 Instructions:
 
@@ -378,17 +434,27 @@ Please note that presentation and format will differ in the app.
 
 #### 12-mo
 
-[VIDEO 12-mo crawler](https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true)
+12-mo crawler
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true")
+```
 
-[VIDEO 12-mo walker](https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true)
+12-mo walker
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true")
+```
 
 #### 18-mo
 
-[VIDEO 18-mo](https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true)
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true")
+```
 
 #### 24-mo
 
-[VIDEO 24-mo](https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true)
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true")
+```
 
 #### General Questionnaires
 
@@ -430,17 +496,27 @@ Give mom answer sheet with rating scale.
 
 #### 12-mo
 
-[VIDEO 12-mo crawler](https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true)
+Crawler
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true")
+```
 
-[VIDEO 12-mo walker](https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true)
+Walker
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true")
+```
 
 #### 18-mo
 
-[VIDEO 18-mo](https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true)
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true")
+```
 
 #### 24-mo
 
-[VIDEO 24-mo](https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true)
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true")
+```
 
 Instructions:
 
