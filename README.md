@@ -8,3 +8,10 @@ We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., & Grolem
 
 To render the website, run `rmarkdown::render_site()` from the project root directory.
 The website files are copied to `docs/` where you can view them using a web browser or file editor.
+
+## Deploying the site
+
+From RStudio, commit the relevant changes, then push the changes to GitHub.
+We use [Netlify](netlify.com) to serve the files pushed to the `docs/` folder.
+At the moment, the `play-project.org` domain is not live, but it will go live soon.
+There is a short delay between pushing the new files to GitHub and having them appear live on the site.

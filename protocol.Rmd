@@ -29,6 +29,14 @@ The mother must act as the caregiver during visits, which will be scheduled at a
 
 ## Initial recruiting call
 
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true>
+
 *Hi, may I speak with [MOM]?*
 
 *My name is [CALLER NAME] and I’m calling from [LAB]. We have a study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. Can I tell you about it?*
@@ -70,6 +78,42 @@ The mother must act as the caregiver during visits, which will be scheduled at a
 *Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!*
 
 ## Confirming the visit (2 days before actual visit, email the day before)
+
+12-mo crawler
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true>
+
+12-mo walker
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true>
+
+18-mo
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true>
+
+24-mo
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true>
 
 *Hi, may I speak with [MOM]?*
 
@@ -113,6 +157,7 @@ Fill out locomotor milestone worksheet.
 - Tools for body dimensions (Height and Weight)- TBD
 
 # Home Visit
+
 ## Introduction
 
 Say to Mom:
@@ -138,7 +183,86 @@ When finished, give parent a moment to look over the form and sign it.
 [Here](https://www.databrary.org/resources/guide/investigators/release/asking/examples.html) are videos depicting how to ask for permission to share and a sample script.
 
 ## Visit Protocol
+
 ### 1: 1-Hour Natural Play Video, Shoes, & Noise Measurement
+
+#### 12-mo (crawler and walker)
+
+Crawler participant view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true>
+
+Crawler experimenter view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true>
+
+Walker participant view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true>
+
+Walker experimenter view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true>
+
+#### 18-mo
+
+Participant view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true>
+
+Experimenter view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true>
+
+#### 24-mo
+
+Participant view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true>
+
+Experimenter view
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true>
 
 Instruction to mom:
 
@@ -154,6 +278,8 @@ Remain at as far a distance as possible (~3 to 5 m, hugging the wall) so that th
 Try not to interact with the child or make eye contact with the child. Just watch through the view finder of the camera.
 
 #### Shoes
+
+[VIDEO recording shoes](https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true)
 
 If child is wearing shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views.
 
@@ -172,6 +298,30 @@ Place device in the most central place in the home (e.g., living room)
 
 ### 2: Solitary Play
 
+<img src="https://nyu.databrary.org/slot/14765/-/asset/63732/download?inline=true"/>
+
+#### 12-mo crawler & walker
+
+[VIDEO 12-mo crawler participant view](https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true)
+
+[VIDEO 12-mo crawler experimenter view](https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true)
+
+[VIDEO 12-mo walker participant view](https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true)
+
+[VIDEO 12-mo walker experimenter view](https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true)
+
+#### 18-mo
+
+[VIDEO 18-mo participant view](https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true)
+
+[VIDEO 18-mo experimenter view](https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true)
+
+#### 24-mo
+
+[VIDEO 24-mo participant view](https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true)
+
+[VIDEO 24-mo experimenter view](https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true)
+
 Interviewer:
 
 *For the next few minutes, we want to see how [CHILD] plays by him/herself. We ask you not to distract him/her or tell him/her how to play. If [CHILD] tries to get your attention or wants to play with you, you can say, “Go play. It’s perfectly fine if he/she doesn’t play with the toy. Say to child: Here [CHILD], play with this!*
@@ -188,6 +338,30 @@ After 2 minutes, say: *“Great job!”*
 
 ### 3: Dyadic (Mother-Child) Play
 
+<img src="https://nyu.databrary.org/slot/14765/-/asset/63731/download?inline=true"/>
+
+#### 12-mo crawler & walker
+
+[VIDEO 12-mo crawler participant view](https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true)
+
+[VIDEO 12-mo crawler experimenter view](https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true)
+
+[VIDEO 12-mo walker participant view](https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true)
+
+[VIDEO 12-mo walker experimenter view starts at 3:40](https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true)
+
+#### 18-mo
+
+[VIDEO 18-mo participant view](https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true)
+
+[VIDEO 18-mo experimenter view starts at 3:48](https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true)
+
+#### 24-mo
+
+[VIDEO 24-mo participant view](https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true)
+
+[VIDEO 24-mo experimenter view starts at 3:32](https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true)
+
 Instructions:
 
 *Please sit next to [CHILD]. I’ll give you a toy. Please play with [CHILD].*
@@ -202,7 +376,21 @@ After 3 minutes, say “Great job!”
 
 Please note that presentation and format will differ in the app.
 
-#### General Questionnaire
+#### 12-mo
+
+[VIDEO 12-mo crawler](https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true)
+
+[VIDEO 12-mo walker](https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true)
+
+#### 18-mo
+
+[VIDEO 18-mo](https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true)
+
+#### 24-mo
+
+[VIDEO 24-mo](https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true)
+
+#### General Questionnaires
 
 Instructions:
 
@@ -240,6 +428,20 @@ Give mom answer sheet with rating scale.
 
 #### Video House Walkthrough
 
+#### 12-mo
+
+[VIDEO 12-mo crawler](https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true)
+
+[VIDEO 12-mo walker](https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true)
+
+#### 18-mo
+
+[VIDEO 18-mo](https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true)
+
+#### 24-mo
+
+[VIDEO 24-mo](https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true)
+
 Instructions:
 
 *Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please give me a tour of your home as I follow with a camera, and take measurements of the spaces.*
@@ -257,6 +459,8 @@ Do NOT turn off the camera when walking to next room.
 Walk SLOWLY.
 
 #### Room Measurements with Laser Distance Measurer
+
+<img src="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/lib/exe/fetch.php/image011.png?w=300&tok=74e992"/>
 
 Measure all rooms in the house.
 Room = any space used by someone on a regular basis, including: bedrooms, kitchens, bathrooms, and basements. 

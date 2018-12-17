@@ -2,6 +2,8 @@
 title: ""
 ---
 
+<img src="img/PLAY-logo.png" height=100px/>
+
 # Goals of the project
 
 Play is the primary context for infant learning and is foundational for all domains of healthy development—cognition, language, social interaction, motor action, and emotion. Before children begin formal schooling, play occupies nearly all of their waking day. In the first years of life, play provides an unparalleled window into typical and atypical patterns of development, and it is an ideal context for understanding development in children around the globe.
