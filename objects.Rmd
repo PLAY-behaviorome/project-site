@@ -16,6 +16,15 @@ output:
 ### General Orientation
 
 This code captures the times that the baby is manually engaged with an object. 
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true")
+```
+
 Coders score only when object events occur, not when they don't occur. 
 This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. 
 
@@ -29,15 +38,42 @@ This is an event code, where gray spaces between cells mean that the baby is not
 
 `<obj>`
 
-Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob). 
+Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob).
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true")
+```
+
 Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them. 
-If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as 'o.'  
+If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as 'o.'
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true")
+```
+
 The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support.
-The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object) .
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true")
+```
+
+The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object).
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true")
+```
 
 Riding on toys with wheels does not count as object, but this will be coded in babyloc pass.
 
 Code 'o' if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.) 
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true")
+```
 
 Onset is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. 
 Contact could be from any part of the hand (fingers, palm, side of hand). 
@@ -45,6 +81,10 @@ Movement could including lifting, holding, pressing, grasping, shaking, banging,
 Offset is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. 
 There is no minimum duration for baby to touch an object to be scored as 'o,' but if infant is touching multiple objects, the offset of 'o' object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. 
 If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout. 
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true")
+```
 
 ### How to Code
 
@@ -87,14 +127,39 @@ This is an event code, where gray space in between cells means that the mom is n
 
 `<obj>`
 
-Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated. 
+Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated.
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true")
+```
+
 Object can include large objects that mom may move (chairs).
 
 Code 'o' if mom is engaged with an object by making contact with the item with her hand(s). 
 Onset is the frame when mom first makes contact with hands. Offset is the frame when mom is no longer in manual contact with an object for at least 3 s. 
 If the mom has multiple items in hand, the Onset of object is when a hand(s) touched the first object in the multiple-object-bout and the Offset is when the hand(s) release the last object.
 
-In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), the object engagement begins when the object starts to move. If the large object never moves (e.g., the mom has a hand on the stroller but does not displace it), then this is not coded as 'o'. 
+In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), the object engagement begins when the object starts to move. If the large object never moves (e.g., the mom has a hand on the stroller but does not displace it), then this is not coded as 'o'.
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true")
+```
 
 If the mom is not in the camera view, code this with a '.' as missing data.
 

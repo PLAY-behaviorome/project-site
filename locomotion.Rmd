@@ -16,7 +16,27 @@ output:
 ### General Orientation
 
 This code captures the times that the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.). 
-Also included in this pass are the times when locomotion cannot occur because the baby is held,  and the times baby is constrained in baby furniture (e.g., a belted chair, highchair, or stroller).
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true")
+```
+
+Also included in this pass are the times when locomotion cannot occur because the baby is held,  
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true")
+```
+
+and the times baby is constrained in baby furniture (e.g., a belted chair, highchair, or stroller).
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true")
+```
+
 Coders score only instances of baby-generated locomotion, and instances of falling, being held, or being constrained. 
 Coders do not score instances where baby is stationary but could have locomoted. 
 Bouts of locomotion are scored as events, where the gray spaces between cells mean the baby is stationary but not held and not constrained.
@@ -42,10 +62,40 @@ Any other movements that are not initiated from these three body locations are c
 `<l>`
 Code “l” when the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, climbing, cruising, supported walking, independent walking, etc.) 
 
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true")
+```
+
 This code counts locomotion regardless of whether the baby maintains balance independently or the baby's balance is supported by a parent or external object/apparatus.
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true")
+```
+
 Any self-generated locomotion on a moving toy or baby furniture (e.g., a bicycle or bottomless car that the baby moves with their legs) counts as locomotion.
 
 Locomotion occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the baby is taking a “step”.
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true")
+```
+
 A baby takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot in the air to count as moving; if not, this is stationary).
 
 Onset of a “step” is when the whole foot/knee comes up off the ground. 
@@ -69,6 +119,18 @@ Code 'f' if the baby loses control over his/her body (i.e., balance) and cannot 
 All falls count. 
 They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion. 
 Falls can happen while the mom is holding the baby's hand or while the baby is holding onto furniture or another support. 
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true")
+```
 
 Onset is frame when baby first begins to lose balance and Offset when baby's body (as defined below) hits the floor.
 
@@ -96,6 +158,15 @@ The baby's feet are not on the ground and is being held in the air by the mother
 The mother's arms are supplying support to the baby's body by touching their torso. 
 Do not count mother constraint when the baby is just sitting on the mother's lap. 
 During a mother constraint, the parent can be moving (carrying) or stationary (holding). 
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true")
+```
+
 
 Onset of hold is the last frame before the baby's second foot (or bum if child was sitting, torso if child was laying down, second knee if crawling or knee walking) lifts up off the current surface and up into the air in mom's arms.
 
@@ -156,9 +227,18 @@ This code captures the times that mom is engaged in locomotion or fell.
 
 Bouts of locomotion are scored as events, where the gray spaces between cells mean the mom is stationary.
 
-Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts
+Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts.
 
 Coders are watching for steps with the feet, the knees, or the bum.
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true")
+```
+
 Any other movements that are not initiated from these three body locations is considered to be a transition between postures and is subsumed by stationary, as it is not locomotion.
 
 Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving.
@@ -174,7 +254,19 @@ Bouts that are coded as “.” means that mom is off camera or her legs are off
 ### Operational Definitions
 
 `<l>`
-Code 'l' when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling). 
+Code 'l' when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling).
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true")
+```
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true")
+```
 
 If you're not sure whether the mom is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this is missing data and the offset of the locomotion bout should be set to the last frame where you can see mom.
 
@@ -184,7 +276,11 @@ However, if you can infer that mom is moving or stationary (i.e., head is bobbin
 
 `<f>`
 
-Code 'f' if the mom loses control over her body (i.e., balance) and cannot recover on her own before the body (bum, hands, torso) hits the ground. 
+Code 'f' if the mom loses control over her body (i.e., balance) and cannot recover on her own before the body (bum, hands, torso) hits the ground.
+
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true")
+```
 
 All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion.
 

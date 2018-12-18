@@ -72,7 +72,18 @@ Onset is the frame when the baby or mom has clearly begun the iconic gesture, an
 
 `<c>`
 
-Code 'c' when the baby or mom engages in a conventional gesture. Conventional gestures are culturally-agreed-upon hand or head movements with a specific meaning, like nodding the head to mean “yes,” shaking the head to mean “no,” and moving the finger to lips to indicate “be quiet”.  
+Code 'c' when the baby or mom engages in a conventional gesture. Conventional gestures are culturally-agreed-upon hand or head movements with a specific meaning, like nodding the head to mean “yes,” shaking the head to mean “no,” and moving the finger to lips to indicate “be quiet”.
+
+shaking head “no”
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/20618,23455/asset/76362/download?inline=true")
+```
+
+holding out hand for “give me”
+```{r, results='asis'}
+write_video_clip_html("https://nyu.databrary.org/slot/14765/20618,23455/asset/76362/download?inline=true")
+```
+
 If a gesture is conventional, you should be able to understand its meaning just by seeing it in isolation, without knowing any of the context. 
 Some additional examples of conventional gestures include: waving, clapping, flipping arms out to side to indicate “I don’t know’ or “where is it”, come here gesture (finger motions or palms), sit down gesture (pats ground), pickup gesture (child holds up arms to be picked up), thumbs up, shrugs, naughties (wag finger), hug me (hold arms out asking for hug), etc.
 
