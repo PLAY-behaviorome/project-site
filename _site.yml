@@ -2,21 +2,21 @@ name: "PLAY Project"
 navbar:
   title: "PLAY"
   left:
-    - text: "home"
+    - text: "Home"
       href: index.html
-    - text: "people"
+    - text: "People"
       href: people.html
-    - text: "protocol"
+    - text: "Protocol"
       href: protocol.html
-    - text: "coding"
+    - text: "Coding"
       href: coding_manual.html
-    - text: "data"
+    - text: "Data"
       href: data.html
-    - text: "news"
+    - text: "News"
       href: news.html
     - text: "GitHub"
       href: http://github.com/PLAY-behaviorome/
-    - text: "site info"
+    - text: "Site info"
       href: site-info.html
 output_dir: "docs"
 output:
