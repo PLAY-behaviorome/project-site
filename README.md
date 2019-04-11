@@ -6,7 +6,8 @@ We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., & Grolem
 
 ## Rendering the site
 
-To render the website, run `rmarkdown::render_site()` from the project root directory.
+To render the website, run `rmarkdown::render_site()` in R from the project root directory.
+(If any packages need to be installed, you can do so using `install.packages("package_name")`)
 The website files are copied to `docs/` where you can view them using a web browser or file editor.
 
 ## Deploying the site

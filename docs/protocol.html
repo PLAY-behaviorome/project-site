@@ -100,6 +100,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +117,6 @@ body {
   padding-top: 59px;
   margin-top: -59px;
 }
-
 .section h2 {
   padding-top: 59px;
   margin-top: -59px;
@@ -134,6 +136,43 @@ body {
 .section h6 {
   padding-top: 59px;
   margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +194,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -323,268 +421,404 @@ div.tocify {
 <div id="overview" class="section level1">
 <h1>Overview</h1>
 <p>PLAY aims to set new standards for conducting open, transparent, and reproducible behavioral science by i) publishing the protocol, and ii) making extensive use of video exemplars to demonstrate phenomena and illustrate behavioral codes. For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to <a href="http://databrary.org">Databrary</a>. To register for access, visit <a href="http://databrary.org/register" class="uri">http://databrary.org/register</a>.</p>
+<p>Please ensure that you are <a href="https://nyu.databrary.org/user/login"><strong>currently logged in at Databrary</strong></a> to view embedded video examples in this wiki and gain access to phone and home questionnaires.</p>
 </div>
-<div id="inclusionexclusion-criteria" class="section level1">
-<h1>Inclusion/Exclusion Criteria</h1>
-<p>Infants’ natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, socioeconomic status (SES), maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.</p>
-<p>However, to ensure a sufficient sample size and based on conversations with the launch group, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, families must be two-parent households. All infants must be English or Spanish monolingual or bilingual. All infants must be the firstborn child and 12, 18, or 24 months of age (plus/minus one week). All infants must be full-term (37-40 weeks) without known disabilities. The mother must act as the caregiver during visits, which will be scheduled at a time when only the mother and infant are present in the home.</p>
+<div id="participant-inclusionexclusion-criteria" class="section level1">
+<h1>Participant Inclusion/Exclusion Criteria</h1>
+<p>Infants’ natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, SES, maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.</p>
+<p>However, to ensure a sufficient sample size and based on conversations with the launch group, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must be:</p>
+<ul>
+<li>From two-parent or single-parent households</li>
+<li>The mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when only the mother and infant are present.</li>
+<li>English or Spanish monolingual or bilingual (i.e., no other language exposure in the home)</li>
+<li>The firstborn child (i.e., only child in the household)</li>
+<li>12, 18, or 24 months of age (+/- 1 week)</li>
+<li>Born full-term (37-40 weeks) without known disabilities</li>
+</ul>
 </div>
 <div id="scheduling-visit" class="section level1">
 <h1>Scheduling Visit</h1>
+<p><em>To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the <a href="link%20to%20questionnaires">participant paperwork</a></em></p>
 <div id="initial-recruiting-call" class="section level2">
 <h2>Initial recruiting call</h2>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true</a></p>
-<p><em>Hi, may I speak with [MOM]?</em></p>
-<p><em>My name is [CALLER NAME] and I’m calling from [LAB]. We have a study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. Can I tell you about it?</em></p>
-<p><em>What language(s) do you speak to [CHILD]?</em></p>
-<p>→ If not ENGLISH or SPANISH: end call</p>
-<p><em>To control for differences in communication, we are looking for families who speak mainly English or Spanish. Would it be alright if you are contacted for other studies in the future?</em></p>
-<p>→ If yes: continue</p>
-<p><em>For this study, we are interested in learning about babies’ natural, everyday experiences in their homes–such as the toys they play with and places they go.</em> <em>For this study, a researcher will visit you and [CHILD] in your home.</em> <em>You and [CHILD] will be video recorded for 1 hour as you go about your day.</em> <em>At the end of the visit we will ask questions about your family, your home, and [CHILD]’s skills and routines. We will also ask you to take us through your home as we do a video tour capturing the places [CHILD] gets to be throughout the day and things that [he/she] plays with.</em></p>
-<p><em>The study will take about 2 hours. You will receive XXX for your participation.</em> <em>We will schedule a day and time that’s convenient for you and when [CHILD] is usually awake/alert and not during a typical meal time.</em></p>
-<p><em>The data collected in this study are valuable and will be placed in a secure web-based library available only to researchers.</em> <em>The purpose is to share the data with experts in the field so that scientists can learn more about infant development.</em></p>
-<p><em>Are you interested in participating?</em></p>
-<p>→ If yes:</p>
-<p><em>Is there a day and time that works best for you (when [CHILD] is awake/alert and not a typical meal time)?</em></p>
-<p>→ If no:</p>
-<p><em>Ok thank you. May we call you for other studies?</em></p>
+<!--
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+-->
+<!-- This is the code from the wiki - for now, the button doesn't seem to be collapsed-->
+<button size="xs" type="info" collapse="initialschedule">
+Video
+</button>
+<collapse id="initialschedule" collapsed="true"> <grid>
+<col xs="12" sm="6" lg="6">
+<panel type="info">
+<html>
+<video width="100%" controls preload="none">
+<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</html>
+</panel>
+</col>
+<p></grid> </collapse></p>
+<p>Hi, may I speak with [MOM]?</p>
+<p>My name is [CALLER NAME] and I’m calling from [LAB] about a home study where we’re looking at how moms and babies interact with each other. We’d be visitng your home and you’d receive $25 at the end of the visit for your participation. Can we tell you about it?</p>
+<p>First, I have some questions to see if you and [CHILD] qualify for the study.</p>
+<p>Does [CHILD]have any siblings?</p>
+<ul>
+<li>→ <em>If yes: <strong>end call</strong>.</em> In this study, we are currently looking for only-children. Would it be alright if we contacted you for other studies in the future?</li>
+<li>→ <em>If no: continue</em></li>
+</ul>
+<p>What language(s) do you speak to [CHILD]?</p>
+<ul>
+<li>→ <em>If not ENGLISH or SPANISH: <strong>end call</strong>.</em> To control for differences in communication, we are looking for families who speak mainly English or Spanish. Would it be alright if we contacted you for other studies in the future?</li>
+<li>→ <em>If yes: continue</em></li>
+</ul>
+<p>Was [CHILD] born on his/her due date? (If not: “How many weeks and days early/late was he/she?”)</p>
+<ul>
+<li>→ <em>If more than 4 weeks early: end call.</em> In this study, we are currently looking for children born on term. Would it be alright if we contacted you for other studies in the future?</li>
+<li>→ <em>If born on term (37-41 weeks): continue</em></li>
+</ul>
+<p>For this study, we are interested in learning about babies’ natural, everyday experiences in their homes. A researcher will visit you and [CHILD] in your home for about 2.5 hours. You and [CHILD] will be video recorded for 1 hour as you go about your day, followed by questions on [CHILD]’s skills and routines. We will ask you to take us through your home as we record the environment. For your participation, we will compensate you with $25 at the end of the session.</p>
+<p>The data collected in this study are valuable and will be placed in a secure web-based library available only to researchers. The purpose is to share the data with experts in the field so that scientists can learn more about infant development.</p>
+<p>Does this sound like something you would be interested in participating in with [CHILD]?</p>
+<p>→ <em>If no to study or to sharing video on Databrary:</em> Okay, thank you. May we call you for other studies?</p>
+<p>→ <em>If yes:</em> Great! Because we are interested in mother-infant routines, we’d like to find a time and date when we can observe just <span style="text-decoration:underline"><strong>you and [CHILD]</strong></span> at home. It would be great if we can schedule a time that is not during a typical mealtime and when [CHILD] is usually awake. Is there a convenient time and day that works best for you that would be within these criteria?</p>
+<p>→ <em>If the date they are available puts baby out of age range:</em> For this study, we are interested in studying specific age groups: 12-, 18-, and 23-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then?</p>
+<hr />
+<ul>
+<li>Before the study, we have a few questions that we’d like to ask. It should only take about 5 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</li>
+</ul>
+<p>→ <em>If yes:</em></p>
+<p>Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</p>
+<ul>
+<li>On your tablet, open Kobo toolbox and start a new questionnaire set</li>
+<li>Fill out participant information at top of new session</li>
+<li>“Save as Draft” after Phone Questionnaire and home visit questionnaires</li>
+<li>Only hit “Submit” after filling out clean-up notes back in lab</li>
+</ul>
+<p><a href="https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741">List of questions on the Phone Questionnaire</a> <em>Please note that presentation and format will differ in the app.</em></p>
+<p>→ <em>If no:</em> Proceed with wrapping up the call:</p>
+<hr />
+<ul>
+<li>So I have you and [CHILD] for our study on [DATE] at [TIME]. We’ll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!</li>
+<li>If the date they are available puts baby out of age range: For this study, we are interested in studying specific age groups: 12-, 18-, and 23-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then? → If no to study or to sharing video on Databrary: Okay, thank you. May we call you for other studies?</li>
+</ul>
+<p>→ If no: Okay, thank you. May we call you for other studies?  </p>
 <div id="voicemail" class="section level3">
 <h3>Voicemail</h3>
-<p><em>Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB].</em> <em>I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age.</em> <em>If you are interested in hearing more about the study, please give us a call back.</em> <em>Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</em></p>
+<p>Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. You would receive $25 for participating in the study and if you are interested in hearing more, please give us a call back. Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</p>
 </div>
+<div id="confirming-the-visit-1-day-before-actual-visit-also-email-the-day-before" class="section level3">
+<h3>Confirming the visit (1 day before actual visit, also email the day before)</h3>
+<p><insert 4 videos here></p>
+<p>Hi, may I speak with [MOM]?</p>
+<p>My name is [NAME] and I’m calling from [LAB] to confirm our visit with you and [CHILD] on [DATE]. Does this time and date still work for you?</p>
+<p>→ <em>If yes:</em></p>
+<hr />
+<p>→ <em>If phone questionnaire was not completed during initial phone call:</em> Before the visit, I’d like to ask you a few questions. It will only take 5 minutes of your time. Can we speak now?</p>
+<p>→ <em>If yes:</em></p>
+<p>Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</p>
+<ul>
+<li>On your tablet, open Kobo toolbox and start a new questionnaire set</li>
+<li>Fill out participant information at top of new session</li>
+<li>“Save as Draft” after Phone Questionnaire and home visit questionnaires</li>
+<li>Only hit “Submit” after filling out clean-up notes back in lab</li>
+</ul>
+<p><a href="https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741">List of questions on the Phone Questionnaire</a> <em>Please note that presentation and format will differ in the app.</em></p>
+<p>→ <em>If no:</em> Can I call you back today or tomorrow [before the visit]. <em>Schedule call.</em></p>
+<hr />
 </div>
-<div id="confirming-the-visit-2-days-before-actual-visit-email-the-day-before" class="section level2">
-<h2>Confirming the visit (2 days before actual visit, email the day before)</h2>
-<p>12-mo crawler </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true</a></p>
-<p>12-mo walker </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true</a></p>
-<p>18-mo </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true</a></p>
-<p>24-mo </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true</a></p>
-<p><em>Hi, may I speak with [MOM]?</em></p>
-<p><em>My name is [NAME] and I’m calling from [LAB] to confirm our visit on [DATE].</em> <em>Before the visit, I’d like to ask you a few questions.</em> <em>It will only take 5 minutes of your time. Can we speak now?</em></p>
-<p>→ If yes:</p>
-<p><em>Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</em></p>
-<p>List of questions on the <a href="phone_questionnaire.html">Phone Questionnaire</a></p>
-<p>Please note that presentation and format will differ in the app.</p>
-<p>→ If no:</p>
-<p><em>Can I call you back today or tomorrow [before the visit]?</em></p>
-<p>Schedule call.</p>
 </div>
 </div>
 <div id="preparing-for-visit" class="section level1">
 <h1>Preparing for Visit</h1>
-<div id="prepare-paperwork" class="section level2">
-<h2>Prepare paperwork</h2>
-<p>Write Participant ID on all paperwork (consents and questionnaires). Fill out locomotor milestone worksheet.</p>
+<div id="pack" class="section level2">
+<h2>Pack</h2>
+<div>
+<table width="70%">
+<tr>
+<td width="25%">
+Camera, SD card and extra battery
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/camera-sdcard-battery.png">
+</td>
+<td width="25%">
+Microphone with sponge cover
+</td>
+<td width="25%">
+<img src="img/mic.eps">
+</td>
+</tr>
+<tr>
+<td width="25%">
+Fully loaded and charged tablet
+</td>
+<td width="25%">
+<img src="img/tablet.eps">
+</td>
+<td width="25%">
+Laser Measure
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/laser.png">
+</td>
+</tr>
+<tr>
+<td width="25%">
+Decibel meter mic
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/dm-mic.eps">
+</td>
+<td width="25%">
+Tripod for camera
+</td>
+<td width="25%">
+<img src="img/tripod.eps">
+</td>
+</tr>
+<tr>
+<td width="25%">
+Tote bag
+</td>
+<td width="25%">
+<img src="img/tote.eps">
+</td>
+<td width="25%">
+Yoga mat
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/yoga-mat.eps">
+</td>
+</tr>
+<tr>
+<td width="25%">
+Dish set
+</td>
+<td width="25%">
+<img src="img/dish-sets.png">
+</td>
+<td width="25%">
+Toy
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/dog.png">
+</td>
+</tr>
+<tr>
+<td width="25%">
+Participant payment
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/payment.png">
+</td>
+<td width="25%">
+Paper backups of all questionnaires and forms
+</td>
+<td width="25%">
+<img src="img/questionnaires.png">
+</td>
+</tr>
+</table>
 </div>
-<div id="pack-equipment" class="section level2">
-<h2>Pack equipment</h2>
-<ul>
-<li>Camera, SD card and extra battery<br />
-</li>
-<li>Mic</li>
-<li>Laser Measure</li>
-<li>Solitary play toy</li>
-<li>Dyadic play toy</li>
-<li>Yoga mat</li>
-<li>Tablet with app for questionnaires (if mom speaks English and/or Spanish, bring both versions of MacArthur), study consent form, Databrary sharing release form, and decibel meter.</li>
-<li>Answer choice sheet with response scales</li>
-<li>Participant payment</li>
-<li>Paper copies of all questionnaires, MCDI, and consent and Databrary forms in case of tablet failure</li>
-<li>Tools for body dimensions (Height and Weight)- TBD</li>
-</ul>
+<!--
+- Camera, SD card and extra battery <img src="img/camera-sdcard-battery.png">
+- Mic <img src="img/mic.png">
+- Laser Measure <img src="img/lasermeasure.png">
+- Dish set, doll, and tote bag <img src="img/dishset-doll-tote.png">
+- Yoga mat <img src="img/yogamat.png">
+- Tablet with app for questionnaires, study consent form, Databrary sharing release form, and decibel meter mic <img src="img/tablet-with-everything.png">
+- Participant payment 
+- Paper copies of all questionnaires, MCDI, and consent and Databrary forms in case of tablet failure
+-->
 </div>
 </div>
 <div id="home-visit" class="section level1">
 <h1>Home Visit</h1>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>Say to Mom:</p>
-<p><em>Thanks for letting us come to your home. The visit has a few parts:</em></p>
-<p><em>I’ll begin by video-recording you and [CHILD] as you go about your day. I will video-record you both for 1 hour. Then, I will ask [CHILD] to play with some toys both by him/herself and with you.</em></p>
-<p><em>Afterwards, I will ask you some general questions about your family and home, and about [CHILD]’s skills and routines.</em></p>
-<p><em>You will give me a tour of your home that I will record on video to get a sense of the places [CHILD] goes and things that he/she plays with.</em></p>
-<p><em>Do you have any questions? Let’s start with reading and signing the consent.</em></p>
+<p><strong>Say to Mom:</strong></p>
+<p>“Thanks for letting us come to your home. The visit has a few parts:</p>
+<p>I’ll begin by video-recording you and [CHILD] as you go about your day. I will video-record you both for 1 hour. Then, I will ask [CHILD] to play with some toys both by him/herself and with you.</p>
+<p>Afterwards, I will ask you some general questions about your family and home, and about [CHILD]’s skills and routines.</p>
+<p>You will give me a tour of your home that I will record on video to get a sense of the places [CHILD] goes and things that he/she plays with.</p>
+<p>Do you have any questions? Let’s start with reading and signing the consent.“</p>
 </div>
 <div id="consent-to-participate-and-permission-to-share" class="section level2">
 <h2>Consent to Participate and Permission to Share</h2>
 <p>Ask parent to review form asking for consent to participate in the study. When finished, give parent a moment to look over form and sign it.</p>
-<p>Ask parent to review form asking for permission to share videos and metadata. When finished, give parent a moment to look over the form and sign it.</p>
-<p><a href="https://www.databrary.org/resources/templates/release-template.html">Here</a> is the Databrary Release Language. <a href="https://www.databrary.org/resources/guide/investigators/release/asking/examples.html">Here</a> are videos depicting how to ask for permission to share and a sample script.</p>
+<p>Ask parent to review form asking for permission to share videos and metadata. When finished, give parent a moment to look over the form and sign it. Here is the <a href="https://databrary.org/access/policies/release-template.html">Databrary Release Language</a>. Here are <a href="https://databrary.org/access/guide/investigators/release/asking/examples.html">videos</a> depicting how to ask for permission to share and a <a href="https://databrary.org/access/guide/investigators/release/asking/script.html">sample script</a>.</p>
 </div>
 <div id="visit-protocol" class="section level2">
 <h2>Visit Protocol</h2>
-<div id="hour-natural-play-video-shoes-noise-measurement" class="section level3">
-<h3>1: 1-Hour Natural Play Video, Shoes, &amp; Noise Measurement</h3>
-<div id="mo-crawler-and-walker" class="section level4">
-<h4>12-mo (crawler and walker)</h4>
-<p>Crawler participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true</a></p>
-<p>Crawler experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true</a></p>
-<p>Walker participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true</a></p>
-<p>Walker experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true</a></p>
+<div id="one-hour-natural-play-video-noise-measurement" class="section level3">
+<h3>1: One-Hour Natural Play Video &amp; Noise Measurement</h3>
+<div id="one-hour-natural-play-video" class="section level4">
+<h4>1.1 One-Hour Natural Play Video</h4>
+<p><insert 4 videos here></p>
+<div id="instruction-to-mom" class="section level5">
+<h5>Instruction to mom:</h5>
+<p>“For the next hour, do anything you would typically do if I weren’t here. Try to ignore me as much as possible and I will stay out of the way. I will also try not to respond to you and [CHILD] so that he/she is not distracted. You can go anywhere in your home. You can play together or not. The idea is to capture what your typical day is like.”</p>
 </div>
-<div id="mo" class="section level4">
-<h4>18-mo</h4>
-<p>Participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true</a></p>
-<p>Experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true</a></p>
+<div id="procedure" class="section level5">
+<h5>Procedure:</h5>
+<ul>
+<li>Keep camera on the child at all times. Specifically, ensure that the child’s whole body is visible on camera. If mom is in frame, capture as much of her body as possible without compromising view of the child.</li>
+<li>Record in front or to the side of the child as much as possible.</li>
+<li>Do not zoom in.</li>
+<li>Remain at as far a distance as possible (~3 to 5 m, hugging the wall) so that the child is not distracted by your presence.</li>
+<li>Try not to interact with the child or make eye contact with the child. Just watch through the view finder of the camera.</li>
+</ul>
 </div>
-<div id="mo-1" class="section level4">
-<h4>24-mo</h4>
-<p>Participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true</a></p>
-<p>Experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true</a></p>
-<p>Instruction to mom:</p>
-<p><em>For the next hour, do anything you would typically do if I weren’t here. Try to ignore me as much as possible and I will stay out of the way. I will also try not to respond to you and [CHILD] so that he/she is not distracted. You can go anywhere in your home. You can play together or not. The idea is to capture what your typical day is like.</em></p>
-<p>Procedure:</p>
-<p>Keep camera on the child at all times. Specifically, ensure that the child’s whole body is visible on camera. If mom is in frame, capture as much of her body as possible without compromising view of the child. Record in front or to the side of the child as much as possible. Do not zoom in. Remain at as far a distance as possible (~3 to 5 m, hugging the wall) so that the child is not distracted by your presence. Try not to interact with the child or make eye contact with the child. Just watch through the view finder of the camera.</p>
 </div>
 <div id="shoes" class="section level4">
-<h4>Shoes</h4>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true</a></p>
+<h4>1.2 Shoes:</h4>
+<p><insert videos here></p>
 <p>If child is wearing shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views.</p>
-<p>Procedure:</p>
+<div id="procedure-1" class="section level5">
+<h5>Procedure:</h5>
 <p>Zoom in with camera and comment on shoe type, heel (if any), and other observations.</p>
 </div>
+</div>
 <div id="decibel-meter" class="section level4">
-<h4>Decibel Meter</h4>
-<p>Open the app on your tablet and start running it just before you begin recording the free play video portion of the visit.</p>
-<p>Procedure:</p>
-<p>Open application (the application immediately starts recording noise levels upon startup). Place device in the most central place in the home (e.g., living room)</p>
+<h4>1.3 Decibel Meter</h4>
+<p>Open the app on your tablet and start running it just before you begin recording the free play video portion of the visit. This process should be recorded on the video camera.</p>
+<div id="procedure-2" class="section level5">
+<h5>Procedure:</h5>
+<ul>
+<li>Open application (the application immediately starts recording noise levels upon startup).</li>
+<li>Place device in the most central place in the home (e.g., living room).</li>
+<li>The microphone should be facing towards the room (e.g., away from walls) and propped up on the microphone stand so that it is <strong>not</strong> lying flat against the surface of the space.</li>
+</ul>
 </div>
 </div>
-<div id="solitary-play" class="section level3">
-<h3>2: Solitary Play</h3>
-<p><img src="https://nyu.databrary.org/slot/14765/-/asset/63732/download?inline=true"/></p>
-<div id="mo-crawler-walker" class="section level4">
-<h4>12-mo crawler &amp; walker</h4>
-<p>12-mo crawler participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true</a></p>
-<p>12-mo crawler experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true</a></p>
-<p>12-mo walker participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true</a></p>
-<p>12-mo walker experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true</a></p>
 </div>
-<div id="mo-2" class="section level4">
-<h4>18-mo</h4>
-<p>18-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true</a></p>
-<p>18-mo experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true</a></p>
+<div id="structured-five-minute-mother-child-play" class="section level3">
+<h3>2: Structured five-minute mother-child play</h3>
+<div id="instruction-to-mom-1" class="section level5">
+<h5>Instruction to mom:</h5>
+<p>“Please sit next to [CHILD]. I’ll give you a set of toys. Please play with [CHILD] however you like.”</p>
 </div>
-<div id="mo-3" class="section level4">
-<h4>24-mo</h4>
-<p>24-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true</a></p>
-<p>24-mo experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
-<p>Interviewer:</p>
-<p>*For the next few minutes, we want to see how [CHILD] plays by him/herself. We ask you not to distract him/her or tell him/her how to play. If [CHILD] tries to get your attention or wants to play with you, you can say, “Go play. It’s perfectly fine if he/she doesn’t play with the toy. Say to child: Here [CHILD], play with this!*</p>
-<p>Camera:</p>
-<p>Record solitary toy play so that view is on baby’s body entirely and hands on object. If child moves around, follow child and keep face in frontal view. Procedure: Set yoga mat down on the floor. Un-stack cups and arrange randomly, standing upright (out of child’s view). Place child in a sitting position on yoga mat and start timing after you present the toy. Use timer on the camera (let the timer run for a bit longer than 2 min to avoid cutting the play time short. Later we code only 2 min of engagement). After 2 minutes, say: <em>“Great job!”</em></p>
-</div>
-</div>
-<div id="dyadic-mother-child-play" class="section level3">
-<h3>3: Dyadic (Mother-Child) Play</h3>
-<p><img src="https://nyu.databrary.org/slot/14765/-/asset/63731/download?inline=true"/></p>
-<div id="mo-crawler-walker-1" class="section level4">
-<h4>12-mo crawler &amp; walker</h4>
-<p>[VIDEO 12-mo crawler participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true</a></p>
-<p>12-mo crawler experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true</a></p>
-<p>12-mo walker participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true</a></p>
-<p>12-mo walker experimenter view starts at 03:40 </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true</a></p>
-</div>
-<div id="mo-4" class="section level4">
-<h4>18-mo</h4>
-<p>18-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true</a></p>
-<p>18-mo experimenter view starts at 3:48 </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true</a></p>
-</div>
-<div id="mo-5" class="section level4">
-<h4>24-mo</h4>
-<p>24-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true</a></p>
-<p>24-mo experimenter view starts at 03:32 </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
-<p>Instructions:</p>
-<p><em>Please sit next to [CHILD]. I’ll give you a toy. Please play with [CHILD].</em></p>
-<p>Procedure:</p>
-<p>Record so that the child and mother’s entire body and hands are captured. Use timer on camera to time engagement. After 3 minutes, say “Great job!”</p>
+<div id="procedure-3" class="section level5">
+<h5>Procedure:</h5>
+<ul>
+<li>Record so that the child and mother’s entire body and hands are captured.</li>
+<li>Use timer on camera to time engagement.</li>
+<li>After 5 minutes, say “Great job!”</li>
+</ul>
 </div>
 </div>
 <div id="questionnaires" class="section level3">
-<h3>4: <a href="questionnaires.html">Questionnaires</a></h3>
-<p>Please note that presentation and format will differ in the app.</p>
-<div id="mo-6" class="section level4">
-<h4>12-mo</h4>
-<p>12-mo crawler </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true</a></p>
-<p>12-mo walker </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
-</div>
-<div id="mo-7" class="section level4">
-<h4>18-mo</h4>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true</a></p>
-</div>
-<div id="mo-8" class="section level4">
-<h4>24-mo</h4>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true</a></p>
-</div>
-<div id="general-questionnaires" class="section level4">
-<h4>General Questionnaires</h4>
-<p>Instructions:</p>
-<p><em>I have some questions for you…</em></p>
-<p>[Only give introduction to the sections that need introduction (i.e., ECBQ and MB-CDI)].</p>
-<p>A GoogleSheet with most of the questions in a database format can be found <a href="https://docs.google.com/spreadsheets/d/1pVOM2naRS_STCXx4nkaRDLO6_V5kGhFaduRfwsv7cnI/edit?usp=sharing">here</a>.</p>
-<p>Procedure:</p>
-<p>Set up camera to record the questionnaires. You’ll need to change the battery on the camera to ensure sufficient power. Sit next to the mom so she is able to read along.</p>
+<h3>3. Questionnaires</h3>
 <ul>
-<li><a href="toys_pets.html">Toys &amp; Pets</a></li>
-<li><a href="home.html">HOME</a></li>
-<li><a href="gender.html">Gender Socialization</a></li>
-<li><a href="locomotor_milestones.html">Locomotor milestones</a></li>
-<li><a href="eclsb_health.html">ECLS-B Health</a></li>
-<li><a href="typical_day.html">Typical Day</a></li>
-<li><a href="media.html">Media time &amp; use</a></li>
+<li><p><a href="https://nyu.databrary.org/volume/254/slot/15048/-/asset/72494">List of Questions on 12-mo Home Questionnaire</a></p></li>
+<li><p><a href="https://nyu.databrary.org/volume/254/slot/15048/-/asset/72492">List of Questions on 18-mo Home Questionnaire</a></p></li>
+<li><p><a href="https://nyu.databrary.org/volume/254/slot/15048/-/asset/72493">List of Questions on 24-mo Home Questionnaire</a></p></li>
+</ul>
+<p><strong>Please note that presentation and format will differ in the app.</strong></p>
+<p><insert 4 videos here></p>
+<!-- Need to rewrite the following section-->
+<div id="general-questionnaire" class="section level4">
+<h4>General Questionnaire</h4>
+<div id="instructions" class="section level5">
+<h5>Instructions:</h5>
+<p>“I have some questions for you…” [Only give introduction to the sections that need introduction (i.e., ECBQ and MacArthur)].</p>
+</div>
+<div id="procedure-4" class="section level5">
+<h5>Procedure:</h5>
+<p>Set up camera to record the questionnaires. You’ll need to change the battery on the camera to ensure sufficient power. - Sit next to the mom so she is able to read along.</p>
+</div>
+</div>
+<div id="macarthur" class="section level4">
+<h4>MacArthur</h4>
+<ul>
+<li>MacArthur should be administered in the primary language of the mom.</li>
+<li>Specific instructions and procedure are included in the questionnaire.</li>
 </ul>
 </div>
-<div id="macarthur-bates-communicative-development-inventory-mb-cdi" class="section level4">
-<h4>MacArthur-Bates Communicative Development Inventory (MB-CDI)</h4>
-<p>MB-CDI should be administered in the primary language of the mom. Specific instructions and procedure are included in the questionnaire.</p>
-</div>
 <div id="ecbq" class="section level4">
-<h4><a href="ecbq.html">ECBQ</a></h4>
-<p>Read instructions on questionnaire. Give mom answer sheet with rating scale.</p>
+<h4>ECBQ</h4>
+<ul>
+<li>Read instructions on questionnaire.</li>
+<li>Give mom answer sheet with rating scale</li>
+</ul>
 </div>
 </div>
 <div id="house-walkthrough-room-measurements" class="section level3">
-<h3>5: House Walkthrough &amp; Room Measurements</h3>
+<h3>4: House Walkthrough &amp; Room Measurements</h3>
 <div id="video-house-walkthrough" class="section level4">
 <h4>Video House Walkthrough</h4>
+<div id="instructions-1" class="section level5">
+<h5>Instructions:</h5>
+<p>“Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please give me a tour of your home as I follow with a camera, and take measurements of the spaces. As we walk around, please show me where you keep any objects — toys, books, sippy cups, anything like that — that [CHILD] might interact with regularly. Please show me where you keep his/her clothes to give us an idea of the kinds of things he/she wears.”</p>
 </div>
-<div id="mo-9" class="section level4">
-<h4>12-mo</h4>
-<p>Crawler </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true</a></p>
-<p>Walker </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true</a></p>
+<div id="procedure-video" class="section level5">
+<h5>Procedure (Video):</h5>
+<ol style="list-style-type: decimal">
+<li>Experimenter should watch recording through camcorder screen to ensure that the view is not blurry or shaky. Move the camera slowly and walk slowly. A clear and steady view, free of blurriness and shakiness, is necessary for detailed coding of the home environment.</li>
+<li>Ensure during the house walkthrough that the parent provides information on all of the following:</li>
+</ol>
+<ul>
+<li><em>Children’s Sleeping Arrangements.</em> If parent does not offer information during walkthrough, say “Please show me where [CHILD] typically sleeps.”</li>
+<li><em>Child’s Clothes.</em> If parent does not offer information during walkthrough, say “Please show me where you keep [CHILD]’s clothes.”</li>
+<li><em>Child’s Books.</em> If parent does not offer information during walkthrough, say “Please show me where you keep [CHILD]’s books.”</li>
+<li><em>Child’s Toys.</em> If parent does not offer information during walkthrough, say “Please show me where you keep [CHILD]’s toys.”</li>
+</ul>
 </div>
-<div id="mo-10" class="section level4">
-<h4>18-mo</h4>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true</a></p>
+<div id="instructions-for-house-walkthrough" class="section level5">
+<h5>Instructions for House Walkthrough:</h5>
+<ol style="list-style-type: decimal">
+<li>Pause at the entrance of the room.</li>
+<li>Name the room by its function (e.g., “This is where [CHILD] sleeps”).</li>
+<li>First, get as much of the ** <em>Entire Room</em> ** in frame as possible. Keep the camera zoomed out and make sure to capture the ceiling and the floor of the room.</li>
+<li>Next, pan the camera SLOWLY from ** <em>Left to Right</em> **.</li>
+<li>Then, pan the camera to ** <em>Floor</em> <strong>, name the different types of surfaces in the space (hardwood, plush carpet, thin rug, linoleum, tile, etc.), and then pan to the </strong> <em>Ceiling</em> **.</li>
+<li>Hold the camera in one hand while you take measurements of the room.</li>
+<li>If parent doesn’t offer information, ask parent if child spends time in each room: “Does [CHILD] spend any time in this room?”</li>
+<li>When parent doesn’t offer information, ask parent about child’s objects in the room: “Do you keep anything for [CHILD] in this room? (If yes:) Would you mind showing me?”</li>
+<li>Experimenter should film the ** <em>Location</em> ** of the storage space (drawer, toy chest, cabinet) in clear context of the rest of the room. Then, SLOWLY and CLEARLY film the ** <em>Contents</em> ** of the storage space to show what is inside of it, zooming in if needed. (Overhead view for bed, crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet, bookshelf, etc.)</li>
+<li>Do ** <em>NOT</em> ** turn off the camera when walking to next room.</li>
+<li>Walk SLOWLY.</li>
+</ol>
 </div>
-<div id="mo-11" class="section level4">
-<h4>24-mo</h4>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true</a></p>
-<p>Instructions:</p>
-<p><em>Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please give me a tour of your home as I follow with a camera, and take measurements of the spaces.</em> <em>As we walk around, please mention the things that [CHILD] plays with in each room. Please show me where you keep his/her clothes to give us an idea of the kinds of things he/she wears.</em></p>
-<p>Procedure (Video):</p>
-<p>Pause at the entrance of the room.</p>
-<p>Name the room by its function (e.g., “This is where [CHILD] sleeps”). First, pan the camera SLOWLY from Left to Right. Then, pan the camera to Floor, name the different types of surfaces in the space (hardwood, plush carpet, thin rug, linoleum, tile, etc.), and then pan to the Ceiling. Hold the camera in one hand while you take measurements of the room. Do NOT turn off the camera when walking to next room. Walk SLOWLY.</p>
 </div>
 <div id="room-measurements-with-laser-distance-measurer" class="section level4">
 <h4>Room Measurements with Laser Distance Measurer</h4>
-<p><img src="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/lib/exe/fetch.php/image011.png?w=300&tok=74e992"/></p>
-<p>Measure all rooms in the house. Room = any space used by someone on a regular basis, including: bedrooms, kitchens, bathrooms, and basements. Do not measure laundry rooms. Rooms don’t have to have windows. A room has to have a clear demarcation (e.g., a wall or an entry). If the room has a short divider (e.g., when a kitchen and a living room are divided by a counter), count as one big room and measure accordingly.</p>
-<p>Procedure:</p>
-<p>Turn measure on by pressing ON/DIST button. Make sure the laser is on. Place the base of the laser flat on the wall. Avoid moldings and door castings. Measure wall to wall, lengthwise and widthwise. If a room has an odd or asymmetrical shape (i.e., any shape other than a rectangle or a square), measure the largest rectangle or square area of the room. Press ON/DIST again to take measurement. Repeat the above for length and width. Focus camera on laser measure and read measurements out loud.</p>
+<ul>
+<li>Room Measurements with Laser Distance Measurer</li>
+<li>Measure all rooms in the house.</li>
+<li>Room = any space used by someone on a regular basis, including: bedrooms, kitchens, bathrooms, and basements. Do not measure laundry rooms. Rooms don’t have to have windows.</li>
+<li>A room has to have a clear demarcation (e.g., a wall or an entry).</li>
+<li>If the room has a short divider (e.g., when a kitchen and a living room are divided by a counter), count as one big room and measure accordingly.</li>
+</ul>
+<p><img src="img/using-laser.png"></p>
+<div id="procedure-5" class="section level5">
+<h5>Procedure:</h5>
+<ol style="list-style-type: decimal">
+<li>Turn measure on by pressing ON/DIST button. Make sure the laser is on.</li>
+<li>Place the base of the laser flat on the wall. Avoid moldings, door castings, and reflective surfaces.</li>
+<li>Measure wall to wall, lengthwise and widthwise.</li>
+<li>If a room has an odd or asymmetrical shape (i.e., any shape other than a rectangle or a square), measure the largest rectangle or square area of the room.</li>
+<li>Press ON/DIST again to take measurement.</li>
+<li>Repeat the above for length and width.</li>
+<li>Focus camera on laser measure and read measurements out loud.</li>
+</ol>
 </div>
 </div>
-<div id="body-dimensions" class="section level3">
-<h3>6: Body Dimensions</h3>
-<p>[TBD]</p>
 </div>
 <div id="visit-wrap-up" class="section level3">
-<h3>7: Visit Wrap-up</h3>
-<p>Complete home measurement, housing checklist sections of the Home Questionnaire. When you arrive back at the lab, wash all toys and equipment thoroughly. Wipe down yoga mat. Rinse nesting cups in bleach-water. Do not submerge shape sorter in water (or it will stop making noise).</p>
-</div>
-<div id="visit-post-processing" class="section level3">
-<h3>8: Visit post-processing</h3>
-<p>Export questionnaire data from tablet. Upload videos, questionnaires, and house decibel data to Databrary.</p>
+<h3>5: Visit Wrap-up</h3>
+<ul>
+<li>Complete housing checklist and clean-up notes sections of the questionnaire battery.</li>
+<li>When you arrive back at the lab, wash all toys and equipment thoroughly. Wipe down yoga mat. Rinse dish set in bleach-water.</li>
+<li>Check over all questionnaire responses and hit “Submit”.</li>
+<li>Upload videos and decibel data to Databrary.</li>
+</ul>
 </div>
 </div>
 </div>

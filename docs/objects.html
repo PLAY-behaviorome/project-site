@@ -100,6 +100,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +117,6 @@ body {
   padding-top: 59px;
   margin-top: -59px;
 }
-
 .section h2 {
   padding-top: 59px;
   margin-top: -59px;
@@ -134,6 +136,43 @@ body {
 .section h6 {
   padding-top: 59px;
   margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +194,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -319,19 +417,15 @@ div.tocify {
 </div>
 
 
-<div id="coding-objects" class="section level1">
-<h1>Coding <a href="objects.html">objects</a></h1>
+<div id="datavyu-object-codes-for-1-hour-natural-play" class="section level1">
+<h1>Datavyu <a href="objects.html">Object Codes</a> for 1-Hour Natural Play</h1>
+<p>Make sure you are <a href="https://nyu.databrary.org/user/login">currently logged in at Databrary</a> to view embedded video examples in this wiki.</p>
 <div id="babyobject" class="section level2">
 <h2><code>babyobject</code></h2>
 <p><code>&lt;obj&gt;</code></p>
 <div id="general-orientation" class="section level3">
 <h3>General Orientation</h3>
-<p>This code captures the times that the baby is manually engaged with an object.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62793/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62777/download?inline=true</a></p>
-<p>Coders score only when object events occur, not when they don’t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object.</p>
+<p>This code captures the times that the baby is manually engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. <a href=""> (2 videos) </a></p>
 </div>
 <div id="value-list" class="section level3">
 <h3>Value List</h3>
@@ -341,35 +435,18 @@ div.tocify {
 <div id="operational-definitions" class="section level3">
 <h3>Operational Definitions</h3>
 <p><code>&lt;obj&gt;</code></p>
-<p>Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob).</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62763/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63765/download?inline=true</a></p>
-<p>Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them. If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as ‘o.’</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63763/download?inline=true</a></p>
-<p>The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63767/download?inline=true</a></p>
-<p>The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object).</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true</a></p>
-<p>Riding on toys with wheels does not count as object, but this will be coded in babyloc pass.</p>
-<p>Code ‘o’ if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.)</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true</a></p>
-<p>Onset is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). Offset is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for baby to touch an object to be scored as ‘o,’ but if infant is touching multiple objects, the offset of ‘o’ object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62755/download?inline=true</a></p>
+<p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob) <a href=""> (2 videos) </a>. Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them. If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as ‘o.’ <a href=""> (1 video) </a> The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support. <a href=""> (1 video) </a> The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object) <a href=""> (1 video) </a>.</p>
+<p>Riding on toys with wheels does not count as object, but this will be coded in <em>babyloc</em> pass.</p>
+<p>Code ‘<strong>o</strong>’ if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.) <a href=""> (1 video) </a></p>
+<p><strong>Onset</strong> is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). <strong>Offset</strong> is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for baby to touch an object to be scored as ‘o,’ but if infant is touching multiple objects, the offset of ‘o’ object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout. <a href=""> (1 video) </a></p>
 </div>
 <div id="how-to-code" class="section level3">
 <h3>How to Code</h3>
 <p>Set “JUMP-BACK-BY” key to 3 s.</p>
 <p>Enable cell highlighting.</p>
-<p>Watch in real time for the baby’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the baby moves/manipulates the object. Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The Onset is the first frame when the baby makes manual contact with the item. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the object bout in real time and set the Offset when the baby breaks manual contact or stops moving object (e.g., stroller) for at least 3 s. Once you’ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the baby is no longer in manual contact with the item and/or when the baby is no longer moving it. Then, hit #9-SETOFFSET.</p>
+<p>Watch in real time for the baby’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the baby moves/manipulates the object. Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The <strong>Onset</strong> is the first frame when the baby makes manual contact with the item. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the object bout in real time and set the <strong>Offset</strong> when the baby breaks manual contact or stops moving object (e.g., stroller) for at least 3 s. Once you’ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the baby is no longer in manual contact with the item and/or when the baby is no longer moving it. Then, hit #9-SETOFFSET.</p>
 <p>Continue watching in real time for the next object bout. If the baby is holding an object while crawling or walking around, you can watch faster by SHUTTLING at 2x speed to find the end of the object engagement.</p>
-<p>To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of ‘o’. Then, hit the ‘JUMP-BACK-BY’ key and check to see if the previous cell lights up. If it does, then the two cells are &lt;3 s apart and should be combined into one bout of ‘o’.</p>
+<p>To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of ‘o’. Then, hit the ‘JUMP-BACK-BY’ key and check to see if the previous cell lights up. If it does, then the two cells are &lt;3 s apart and should be combined into one bout of ‘<strong>o</strong>’.</p>
 </div>
 </div>
 <div id="momobject" class="section level2">
@@ -387,33 +464,21 @@ div.tocify {
 <div id="operational-definitions-1" class="section level3">
 <h3>Operational Definitions</h3>
 <p><code>&lt;obj&gt;</code></p>
-<p>Object = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62767/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62791/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62781/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
-<p>Object can include large objects that mom may move (chairs).</p>
-<p>Code ‘o’ if mom is engaged with an object by making contact with the item with her hand(s). Onset is the frame when mom first makes contact with hands. Offset is the frame when mom is no longer in manual contact with an object for at least 3 s. If the mom has multiple items in hand, the Onset of object is when a hand(s) touched the first object in the multiple-object-bout and the Offset is when the hand(s) release the last object.</p>
-<p>In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), the object engagement begins when the object starts to move. If the large object never moves (e.g., the mom has a hand on the stroller but does not displace it), then this is not coded as ‘o’.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true&quot;)</code></pre>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63366/download?inline=true</a></p>
+<p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated <a href=""> (5 videos) </a>. Object can include large objects that mom may move (chairs).</p>
+<p>Code ‘<strong>o</strong>’ if mom is engaged with an object by making contact with the item with her hand(s). <strong>Onset</strong> is the frame when mom first makes contact with hands. <strong>Offset</strong> is the frame when mom is no longer in manual contact with an object for at least 3 s. If the mom has multiple items in hand, the Onset of object is when a hand(s) touched the first object in the multiple-object-bout and the Offset is when the hand(s) release the last object.</p>
+<p>In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), the object engagement begins when the object starts to move. If the large object never moves (e.g., the mom has a hand on the stroller but does not displace it), then this is not coded as ‘<strong>o</strong>’. <a href=""> (1 video) </a></p>
+<p>Your browser does not support html5 video.</p>
 <p>If the mom is not in the camera view, code this with a ‘.’ as missing data.</p>
 </div>
 <div id="how-to-code-1" class="section level3">
 <h3>How to Code</h3>
 <p>Set “JUMP-BACK-BY” key to 3 s.</p>
 <p>Enable cell highlighting.</p>
-<p>Watch in real-time for the mom’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the mom moves/manipulated the object (which would make this an instance of Object). Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The Onset is the first frame when the mom makes manual contact with the item and moves it through space. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the Object bout in real time and set the Offset when the mom breaks manual contact or stops moving the object for at least 3 s (i.e., Object bouts that are interrupted by gray space are more than 3 s apart.</p>
+<p>Watch in real-time for the mom’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the mom moves/manipulated the object (which would make this an instance of Object). Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The <strong>Onset</strong> is the first frame when the mom makes manual contact with the item and moves it through space. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the Object bout in real time and set the <strong>Offset</strong> when the mom breaks manual contact or stops moving the object for at least 3 s (i.e., Object bouts that are interrupted by gray space are more than 3 s apart.</p>
 <p>There is no necessary minimum duration for object engagement during the ‘o’ bout to be coded as Object. In other words, the mom can engage with an item or as little or as much time as they would like, however, the mom must make manual contact and move it through space to count.</p>
 <p>Once you’ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the mom if no longer in manual contact with the item and/or when the mom is no longer moving it. Then, hit #9-SETOFFSET.</p>
 <p>Continue watching in real time for the next object bout. If the mom is walking or crawling with an object, watch at 2x speed.</p>
-<p>Do not agonize. If the mom goes in and out of the camera view, but you know she is still holding the same object and has not put it down, code it in the same bout of ‘o’. Do not mark the “.” for every few seconds she is out of frame.</p>
+<p>Do not agonize. If the mom goes in and out of the camera view, but you know she is still holding the same object and has not put it down, code it in the same bout of ‘<strong>o</strong>’. Do not mark the “.” for every few seconds she is out of frame.</p>
 <p>Code as Object event if mom’s back is to the camera, but you see her arms moving and she overtly appears to be manipulating something—even if you can’t see exactly what it is.</p>
 <p>Many times, onsets and offsets are coded when mom goes in and out of frame. In these instances, hit the <em>0</em> key to set a continuous cell, whose onset is 1-ms after the previous cell.</p>
 </div>
