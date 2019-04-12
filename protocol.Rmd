@@ -172,25 +172,25 @@ Just as a reminder, the data we collect from you now and during the visit, will 
 <td width="25%"> Camera, SD card and extra battery </td>
 <td width="25%" style="padding-right: 40px;"> <img src="img/camera-sdcard-battery.png"> </td>
 <td width="25%"> Microphone with sponge cover  </td>
-<td width="25%"> <img src="img/mic.eps"> </td>
+<td width="25%"> <img src="img/mic.png"> </td>
 </tr>
 <tr>
 <td width="25%"> Fully loaded and charged tablet</td>
-<td width="25%"> <img src="img/tablet.eps"> </td>
+<td width="25%"> <img src="img/tablet.png"> </td>
 <td width="25%"> Laser Measure  </td>
 <td width="25%" style="padding-right: 40px;"> <img src="img/laser.png"> </td>
 </tr>
 <tr>
 <td width="25%"> Decibel meter mic  </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/dm-mic.eps"> </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/dm-mic.png"> </td>
 <td width="25%"> Tripod for camera</td>
-<td width="25%"> <img src="img/tripod.eps"> </td>
+<td width="25%"> <img src="img/tripod.png"> </td>
 </tr>
 <tr>
 <td width="25%"> Tote bag  </td>
-<td width="25%"> <img src="img/tote.eps"> </td>
+<td width="25%"> <img src="img/tote.png"> </td>
 <td width="25%"> Yoga mat </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/yoga-mat.eps"> </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/yoga-mat.png"> </td>
 </tr>
 <tr>
 <td width="25%"> Dish set  </td>
