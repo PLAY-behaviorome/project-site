@@ -58,7 +58,7 @@ If yes, please specify:
 - Both
 - None
 
-**B2. How many hours per week does {CHILD} spend in the care of someone else?**
+**B2. How many hours per week does [CHILD] spend in the care of someone else?**
 
 Hours/week: __________
 
@@ -68,7 +68,7 @@ Hours/week: __________
 
 Month ______   Day _________   Year_______
 
-(NOTE: END screener if mother was younger than 21-yo when {CHILD} was born.)
+(NOTE: END screener if mother was younger than 21-yo when [CHILD] was born.)
 
 **C2. What is your race and ethnicity? “Would you describe your race/ethnicity as…”**
 
@@ -101,7 +101,7 @@ Month ______   Day _________   Year_______
 
 REFUSED          DON'T KNOW
 
-(NOTE: END screener if father was younger than 21-yo when {CHILD} was born.)
+(NOTE: END screener if father was younger than 21-yo when [CHILD] was born.)
 
 **D2. What is their race and ethnicity? “Would you describe their race/ethnicity as…”**
 
