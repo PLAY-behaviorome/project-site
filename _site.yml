@@ -14,8 +14,6 @@ navbar:
       href: data.html
     - text: "news"
       href: news.html
-    - text: "GitHub"
-      href: http://github.com/PLAY-behaviorome/
     - text: "site info"
       href: site-info.html
 output_dir: "docs"

@@ -367,8 +367,6 @@ Set up camera to record the questionnaires. You'll need to change the battery on
 * A room has to have a clear demarcation (e.g., a wall or an entry).
 * If the room has a short divider (e.g., when a kitchen and a living room are divided by a counter), count as one big room and measure accordingly.
 
-<img src="img/using-laser.png">
-
 ##### Procedure:
 
 1. Turn measure on by pressing ON/DIST button. Make sure the laser is on.
@@ -380,7 +378,7 @@ Set up camera to record the questionnaires. You'll need to change the battery on
 7. Focus camera on laser measure and read measurements out loud.
 
 
-### 5: Visit Wrap-up
+### 5: Visit wrap-up
 
 * Complete housing checklist and clean-up notes sections of the questionnaire battery.
 * When you arrive back at the lab, wash all toys and equipment thoroughly. Wipe down yoga mat. Rinse dish set in bleach-water.
